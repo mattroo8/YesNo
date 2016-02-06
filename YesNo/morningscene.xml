@@ -1,0 +1,37 @@
+<scene>
+<!--First event-->
+<event>It's six o'clock, on a sunday morning. The sun creeps through the curtains and breaks your sleep. As you sit up you, you clear the sleep from your eyes and look around the room. There is a desk in the corner of the room with an array of books and notes scattered across it. There is a closet standing beside it and an old gym bag falling out of it with gym gear scenting the air of mud and sweat. Do you want to get up and take a look around?</event>
+<answer>yes</answer>
+<key>26</key>
+<isScene>no</isScene>
+<!--Left child of the first event-->
+<event>You lay back down and stare at the ceiling, you try to think back through your memories of how you got here and why you cant remeber anything. Nothing comes to you all you can see is darkness as you urge your brain to come to some sort of conclusion. You look down at the end of the bed. Your feet are hanging over the end of the bed. You think to yourself, that you must be over 6 foot. Its not very comfortable lying in a single bed, so you decide to get up and see whats on the desk. You walk over to the desk and scan the scattered sheets. Looks like somebody is writing a paper on biology. There are some diagrams of chromosomes and cells. You read through the paragraphs, and are suprised that you can understand alot of what its saying. You think to yourself that you must be a biology proffessor or teacher. Do you think thats correct?</event>
+<answer>no</answer>
+<key>11</key>
+<isScene>no</isScene>
+<!--Right child of the first event-->
+<event>You get up and make your way over to the closet, the gym bag that you noticed contains shorts, a tshirt and mucky runners. You suddenly get a strong urge to try them on. You pull the seat out from under the desk and sit down. Picking up the left runner you loosen the lacers and pull on the shoe. It's a perfect fit. You think to yourself that they must be yours. You pull on the right shoe and tie both of them up. You take the shorts from the bag and then put them on over the shoes and then you grab the tshirt and put that on as well. Everything fits, are you an athlete?</event>
+<answer>yes</answer>
+<key>31</key>
+<isScene>no</isScene>
+<!--Left child of the first events left child-->
+<event>youAreNotABiologyProfessor</event>
+<answer>no</answer>
+<key>6</key>
+<isScene>yes</isScene>
+<!--Right child of the first events left child-->
+<event>youAreABiologyProfessor</event>
+<answer>no</answer>
+<key>17</key>
+<isScene>yes</isScene>
+<!--Right child of the first events right child-->
+<event>youAreAnAthlete</event>
+<answer>yes</answer>
+<key>44</key>
+<isScene>yes</isScene>
+<!--Left child of the first events right child-->
+<event>youAreNotAnAthlete</event>
+<answer>yes</answer>
+<key>30</key>
+<isScene>yes</isScene>
+</scene>

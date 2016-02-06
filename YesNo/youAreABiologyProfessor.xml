@@ -1,0 +1,37 @@
+<scene>
+<!--First event-->
+<event>You seem pretty sure after reading through the notes that this is infact your work. You pull out the seat from under the desk and continue to read through the papers. It looks like you're writing a paper on genetic mutations. The books stacked on the desk are all related to this topic. As you read on it become clear to you that what you are proposing is highly unethical. You then see a photography peaking out from under a stack of notes. It is a picture of a young child with a strange deformity on its legs and arms. As you closer you can see that the child has instead of fingers and toes, he has what looks like claws. Are you an evil scientist? </event>
+<answer>yes</answer>
+<key>26</key>
+<isScene>no</isScene>
+<!--Left child of the first event-->
+<event>You know that there is good in you and there must be more to this deformed child than an evil plot</event>
+<answer>no</answer>
+<key>11</key>
+<isScene>no</isScene>
+<!--Right child of the first event-->
+<event>You get up and make your way over to the closet, the gym bag that you noticed contains shorts, a tshirt and mucky runners. You suddenly get a strong urge to try them on. You pull the seat out from under the desk and sit down. Picking up the left runner you loosen the lacers and pull on the shoe. It's a perfect fit. You think to yourself that they must be yours. You pull on the right shoe and tie both of them up. You take the shorts from the bag and then put them on over the shoes and then you grab the tshirt and put that on as well. Everything fits, are you an athlete?</event>
+<answer>yes</answer>
+<key>31</key>
+<isScene>no</isScene>
+<!--Left child of the first events left child-->
+<event>afternoonscene</event>
+<answer>no</answer>
+<key>6</key>
+<isScene>yes</isScene>
+<!--Right child of the first events left child-->
+<event>afternoonscene</event>
+<answer>no</answer>
+<key>17</key>
+<isScene>yes</isScene>
+<!--Right child of the first events right child-->
+<event>afternoonscene</event>
+<answer>yes</answer>
+<key>44</key>
+<isScene>yes</isScene>
+<!--Left child of the first events right child-->
+<event>afternoonscene</event>
+<answer>yes</answer>
+<key>30</key>
+<isScene>yes</isScene>
+</scene>

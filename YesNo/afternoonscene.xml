@@ -1,0 +1,37 @@
+<scene>
+<!--First event-->
+<event>Its the afternoon, do want to call your friend?</event>
+<answer>yes</answer>
+<key>26</key>
+<isScene>no</isScene>
+<!--Left child of the first event-->
+<event>You dont call him, do you want to go outside?</event>
+<answer>no</answer>
+<key>11</key>
+<isScene>no</isScene>
+<!--Right child of the first event-->
+<event>You call him, and he answers, he wants to meet you in town, do you say yes?</event>
+<answer>yes</answer>
+<key>31</key>
+<isScene>no</isScene>
+<!--Left child of the first events left child-->
+<event>eveningscene</event>
+<answer>no</answer>
+<key>6</key>
+<isScene>yes</isScene>
+<!--Right child of the first events left child-->
+<event>eveningscene</event>
+<answer>no</answer>
+<key>17</key>
+<isScene>yes</isScene>
+<!--Right child of the first events right child-->
+<event>eveningscene</event>
+<answer>yes</answer>
+<key>44</key>
+<isScene>yes</isScene>
+<!--Left child of the first events right child-->
+<event>eveningscene</event>
+<answer>yes</answer>
+<key>30</key>
+<isScene>yes</isScene>
+</scene>
