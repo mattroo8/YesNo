@@ -108,11 +108,13 @@
     
     // If active text field is hidden by keyboard, scroll it so it's visible
     // Your application might not need or want this behavior.
-    CGRect aRect = self.view.frame;
-    aRect.size.height -= kbSize.height;
-    if (!CGRectContainsPoint(aRect, _ageTextField.frame.origin) ) {
-        CGPoint scrollPoint = CGPointMake(0.0, _ageTextField.frame.origin.y-kbSize.height);
-        [_scrollView setContentOffset:scrollPoint animated:YES];
+    if(_ageTextField.editing == YES){
+        CGRect aRect = self.view.frame;
+        aRect.size.height -= kbSize.height;
+        if (!CGRectContainsPoint(aRect, _ageTextField.frame.origin) ) {
+            CGPoint scrollPoint = CGPointMake(0.0, _ageTextField.frame.origin.y-kbSize.height);
+            [_scrollView setContentOffset:scrollPoint animated:YES];
+        }
     }
 }
 
