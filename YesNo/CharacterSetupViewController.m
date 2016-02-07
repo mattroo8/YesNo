@@ -25,6 +25,10 @@
     _firstNameTextField.delegate = self;
     _lastNameTextField.delegate = self;
     _ageTextField.delegate = self;
+    
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc]
+                     initWithTarget:self.view
+                             action:@selector(endEditing:)]];
 }
 
 - (void)didReceiveMemoryWarning {
