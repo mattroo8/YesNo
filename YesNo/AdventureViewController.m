@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Matt");
     _currentIndex = 0;
     self.textView.editable = NO;
     self.enteredText = @"";
