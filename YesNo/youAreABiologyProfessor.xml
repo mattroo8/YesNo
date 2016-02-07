@@ -1,16 +1,22 @@
 <scene>
 <!--First event-->
-<event>You seem pretty sure after reading through the notes that this is infact your work. You pull out the seat from under the desk and continue to read through the papers. It looks like you're writing a paper on genetic mutations. The books stacked on the desk are all related to this topic. As you read on it become clear to you that what you are proposing is highly unethical. You then see a photography peaking out from under a stack of notes. It is a picture of a young child with a strange deformity on its legs and arms. As you closer you can see that the child has instead of fingers and toes, he has what looks like claws. Are you an evil scientist? </event>
+<event>You seem pretty sure after reading through the notes that this is infact your work. You pull out the seat from under the desk and continue to read through the papers. It looks like you're writing a paper on genetic mutations. The books stacked on the desk are all related to this topic. As you read on it become clear to you that what you are proposing is highly unethical. You then see a photography peaking out from under a stack of notes. It is a picture of a young child with a strange deformity on its legs and arms. As you closer you can see that the child has instead of fingers and toes, he has what looks like claws. You find a number on one of the pieces of paper. Do you ring it? </event>
 <answer>yes</answer>
 <key>26</key>
 <isScene>no</isScene>
 <!--Left child of the first event-->
-<event>You know that there is good in you and there must be more to this deformed child than an evil plot</event>
+<event>You don't call the number, but instead you walk out of the room into the hall. It's a small narrow hallway with a door right across from you. You turn right and walk to the end of the hall into the kitchen. You get a waft of warm stew which has filled the air. On the cooker there is a pot with food in it. You go over and try some.</event>
 <answer>no</answer>
 <key>11</key>
 <isScene>no</isScene>
 <!--Right child of the first event-->
-<event>You get up and make your way over to the closet, the gym bag that you noticed contains shorts, a tshirt and mucky runners. You suddenly get a strong urge to try them on. You pull the seat out from under the desk and sit down. Picking up the left runner you loosen the lacers and pull on the shoe. It's a perfect fit. You think to yourself that they must be yours. You pull on the right shoe and tie both of them up. You take the shorts from the bag and then put them on over the shoes and then you grab the tshirt and put that on as well. Everything fits, are you an athlete?</event>
+<event>You pick up the phone which is sitting on the corner of the desk. You dial the number and wait for someone to answer on the other line.
+"Hello, CornerStone Technologys, this is Amy speaking, how can I help?"
+You wonder about what you should say...
+"Hello" the lady replies to the silence.
+"Hi this is...John..John Smith..."
+"Hi John Smith, how can I help you?"
+"Im looking for the biotechnology lab...."</event>
 <answer>yes</answer>
 <key>31</key>
 <isScene>no</isScene>
