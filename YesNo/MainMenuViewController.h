@@ -13,7 +13,5 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *continueStoryButton;
 
-@property (strong, nonatomic) UINavigationController *navController;
-
 @end
 
