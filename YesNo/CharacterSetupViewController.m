@@ -41,13 +41,13 @@
         NSString *message = nil;
         BOOL showAlert = NO;
         
-        if(!_firstNameTextField.text || ![_firstNameTextField.text length]>0){
+        if(!_firstNameTextField.text || [_firstNameTextField.text length]==0){
             message = @"Please enter your first name";
             showAlert = YES;
-        } else if(!_lastNameTextField.text || ![_lastNameTextField.text length]>0){
+        } else if(!_lastNameTextField.text || [_lastNameTextField.text length]==0){
             message = @"Please enter your last name";
             showAlert = YES;
-        } else if(!_ageTextField.text || ![_ageTextField.text length]>0){
+        } else if(!_ageTextField.text || [_ageTextField.text length]==0){
             message = @"Please enter your age";
             showAlert = YES;
         } else {
@@ -82,11 +82,11 @@
     [_usm saveCharacter:_usm.mainCharacter];
     AdventureViewController *advc = [AdventureViewController new];
     advc.presentedFromCharacterSetup = YES;
-    [self presentViewController:advc animated:NO completion:nil];
+    [self.navigationController pushViewController:advc animated:YES];
 }
 - (IBAction)backPressed:(id)sender {
     
-    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)registerForKeyboardNotifications

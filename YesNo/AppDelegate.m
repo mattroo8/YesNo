@@ -18,10 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:[MainMenuViewController new]];
     [self.window makeKeyAndVisible];
+    UINavigationController *navVC = [UINavigationController new];
+    navVC.navigationBar.hidden = YES;
+    [self.window setRootViewController:navVC];
+    [navVC pushViewController:[MainMenuViewController new] animated:YES];
     return YES;
 }
 

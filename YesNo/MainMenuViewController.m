@@ -36,14 +36,14 @@
     
     CharacterSetupViewController *csvc = [CharacterSetupViewController new];
     csvc.delegate = self;
-    [self presentViewController:csvc animated:YES completion:nil];
+    [self.navigationController pushViewController:csvc animated:YES];
 }
 
 - (IBAction)mainMenuContinueStoryButtonPressed:(id)sender {
     
     AdventureViewController *advc = [AdventureViewController new];
     advc.presentedFromCharacterSetup = NO;
-    [self presentViewController:advc animated:YES completion:nil];
+    [self.navigationController pushViewController:advc animated:YES];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

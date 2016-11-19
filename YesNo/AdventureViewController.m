@@ -43,11 +43,7 @@
 - (IBAction)goToMainMenu:(id)sender
 {
     [_storyManager saveState];
-    if(_presentedFromCharacterSetup){
-        [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    } else {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)backButtonPressed:(id)sender
