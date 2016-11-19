@@ -15,7 +15,7 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>afternoonscene</event>
+<event>You Died</event>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
@@ -27,12 +27,12 @@
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>afternoonscene</event>
+<event>You Died</event>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>afternoonscene</event>
+<event>You Died</event>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
