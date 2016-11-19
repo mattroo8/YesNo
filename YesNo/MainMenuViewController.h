@@ -11,7 +11,6 @@
 
 @interface MainMenuViewController : UIViewController <MainMenuNavDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *beginStoryButton;
 @property (weak, nonatomic) IBOutlet UIButton *continueStoryButton;
 
 @property (strong, nonatomic) UINavigationController *navController;

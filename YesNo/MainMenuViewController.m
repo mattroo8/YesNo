@@ -20,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
     UserStateManager *usm = [UserStateManager sharedUserStateManager];
     if(!usm.mainCharacter){
         usm.mainCharacter = [Character new];
