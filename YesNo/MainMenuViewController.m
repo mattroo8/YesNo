@@ -51,12 +51,4 @@
     return YES;
 }
 
--(void)presentViewController:(UIViewController *)vc
-{
-    [self presentViewController:vc animated:YES completion:nil];
-}
-
-
-
-
 @end
