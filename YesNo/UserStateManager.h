@@ -12,8 +12,6 @@
 
 @interface UserStateManager : NSObject
 
-@property (strong, nonatomic) Character *mainCharacter;
-
 -(void)saveCharacter:(Character *)character;
 -(Character *)loadCharacter;
 -(void)saveProgress:(Scene *)scene;

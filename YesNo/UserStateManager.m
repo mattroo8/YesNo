@@ -30,7 +30,6 @@ static UserStateManager* _sharedUserState = nil;
         _characterFileName = @"character.txt";
         _characterFile = [_documentsDirectory stringByAppendingPathComponent:_characterFileName];
         _sceneFileName = @"scene.txt";
-        _mainCharacter = [self loadCharacter];
     }
     return self;
 }

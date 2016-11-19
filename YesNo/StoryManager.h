@@ -19,6 +19,7 @@
 @property (strong, nonatomic) Event *currentEvent;
 @property (strong, nonatomic) Tree *storyTree;
 @property (strong, nonatomic) UserStateManager *userStateManager;
+@property (strong, nonatomic) Character *mainCharacter;
 
 @property (nonatomic, weak) id<StoryManagerDelegate> delegate;
 

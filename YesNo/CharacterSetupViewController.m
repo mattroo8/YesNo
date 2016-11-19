@@ -69,17 +69,17 @@
         [self presentViewController:alert animated:YES completion:nil];
         return;
     }
-    _usm.mainCharacter = [Character new];
-    _usm.mainCharacter.firstName = _firstNameTextField.text;
-    _usm.mainCharacter.lastName = _lastNameTextField.text;
-    _usm.mainCharacter.age = _ageTextField.text;
-    _usm.mainCharacter.sex = [_sexSegmentedControl titleForSegmentAtIndex:_sexSegmentedControl.selectedSegmentIndex];
-    _usm.mainCharacter.currentStory = @"morningscene";
-    _usm.mainCharacter.eventHistory = [NSMutableArray new];
-    _usm.mainCharacter.currentEvent = nil;
-    _usm.mainCharacter.currentEventIndex = 0;
+    Character *mainCharacter = [Character new];
+    mainCharacter.firstName = _firstNameTextField.text;
+    mainCharacter.lastName = _lastNameTextField.text;
+    mainCharacter.age = _ageTextField.text;
+    mainCharacter.sex = [_sexSegmentedControl titleForSegmentAtIndex:_sexSegmentedControl.selectedSegmentIndex];
+    mainCharacter.currentStory = @"morningscene";
+    mainCharacter.eventHistory = [NSMutableArray new];
+    mainCharacter.currentEvent = nil;
+    mainCharacter.currentEventIndex = 0;
     
-    [_usm saveCharacter:_usm.mainCharacter];
+    [_usm saveCharacter:mainCharacter];
     AdventureViewController *advc = [AdventureViewController new];
     advc.presentedFromCharacterSetup = YES;
     [self.navigationController pushViewController:advc animated:YES];
