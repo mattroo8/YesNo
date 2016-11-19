@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *element;
 @property (nonatomic, strong) Event *event;
 @property (nonatomic, strong) NSMutableArray *events;
+@property (nonatomic, strong) NSString *storyName;
 
 - (void)startParsingFile:(NSString *)fileName;
 

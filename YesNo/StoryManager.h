@@ -10,15 +10,22 @@
 #import "SceneParser.h"
 #import "Event.h"
 #import "Tree.h"
+#import "UserStateManager.h"
+#import "StoryManagerDelegate.h"
 
 @interface StoryManager : UIViewController
 
 @property (strong, nonatomic) SceneParser *parser;
 @property (strong, nonatomic) Event *currentEvent;
 @property (strong, nonatomic) Tree *storyTree;
-@property (strong, nonatomic) NSMutableArray *eventHistory;
+@property (strong, nonatomic) UserStateManager *userStateManager;
 
--(id)initWithSceneName:(NSString *)sceneName andEvent:(Event *)event;
--(NSString *)getNextTextForChoice:(BOOL)choice;
+@property (nonatomic, weak) id<StoryManagerDelegate> delegate;
+
+-(id)init;
+-(void)setupStory;
+-(void)getNextTextForChoice:(BOOL)choice;
+-(NSString *)getPastEventTextForDirection:(BOOL)isForwardDirection;
+-(void)saveState;
 
 @end

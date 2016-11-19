@@ -77,10 +77,12 @@
     _usm.mainCharacter.currentStory = @"morningscene";
     _usm.mainCharacter.eventHistory = [NSMutableArray new];
     _usm.mainCharacter.currentEvent = nil;
+    _usm.mainCharacter.currentEventIndex = 0;
     
     [_usm saveCharacter:_usm.mainCharacter];
-    AdventureViewController *advVC = [AdventureViewController new];
-    [self presentViewController:advVC animated:YES completion:nil];
+    AdventureViewController *advc = [AdventureViewController new];
+    advc.presentedFromCharacterSetup = YES;
+    [self presentViewController:advc animated:NO completion:nil];
 }
 - (IBAction)backPressed:(id)sender {
     

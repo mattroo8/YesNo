@@ -8,30 +8,47 @@
 
 #import "StoryManager.h"
 
+@interface StoryManager()
+
+@property int currentIndex;
+
+@end
+
 @implementation StoryManager
 
--(id)initWithSceneName:(NSString *)sceneName andEvent:(Event *)event {
+-(id)init {
     if ( self = [super init] ) {
-        _currentEvent = event;
+        
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(eventsReceived:)
                                                      name:@"EventsReceivedNotification"
-                                                   object:nil];
-        [self parseNewScene:sceneName];
+                                                   object:nil];        
+        _userStateManager = [UserStateManager sharedUserStateManager];
     }
     return self;
 }
 
--(NSString *)getNextTextForChoice:(BOOL)choice
+-(void)getNextTextForChoice:(BOOL)choice
 {
-    _currentEvent.answer = choice ? @"yes" : @"no";
+    _currentEvent.answer = choice;
     Event *event = [_storyTree getNextEventForChoice:choice];
-    _currentEvent = event;
-    _currentEvent.answer = choice ? @"yes" : @"no";
-    if(_currentEvent.isScene){
-        [self parseNewScene:_currentEvent.eventText];
+    if(event.isScene){
+        [self parseNewScene:event.eventText];
+    } else if(event.isEnding){
+        UserStateManager *usm = [UserStateManager sharedUserStateManager];
+        NSString *uniqueId = [usm.mainCharacter.firstName stringByAppendingString:[[NSUUID UUID] UUIDString]];
+        _currentEvent.eventText = [event.eventText stringByReplacingOccurrencesOfString:@"UUID"
+                                                                 withString:uniqueId];
+
+        [_delegate showYesButtonForStoryView:NO andNoButton:NO andBackButton:NO andForwardButton:NO];
+        [_delegate setTextForStoryView:_currentEvent.eventText];
+    } else {
+        _currentEvent = event;
+        [_userStateManager.mainCharacter.eventHistory addObject:_currentEvent];
+        _userStateManager.mainCharacter.currentEventIndex++;
+        [_delegate setTextForStoryView:_currentEvent.eventText];
+        [self updateStoryViewButtons];
     }
-    return _currentEvent.eventText;
 }
 
 -(void)eventsReceived:(NSNotification*)notification
@@ -42,18 +59,121 @@
     for(Event *event in events){
         [_storyTree insertNodeWithEvent:event];
     }
-    if(!_currentEvent || _currentEvent.isScene){
+    if(!_userStateManager.mainCharacter.currentEvent){
         _currentEvent = [Event new];
         _currentEvent = _storyTree.root.event;
+        [_userStateManager.mainCharacter.eventHistory addObject:_currentEvent];
+        if(_userStateManager.mainCharacter.currentEventIndex != 0){
+            _userStateManager.mainCharacter.currentEventIndex++;
+        }
     } else {
-        [_storyTree searchNodeForKey:_currentEvent.key];
+        _currentEvent = _userStateManager.mainCharacter.currentEvent;
     }
+    _userStateManager.mainCharacter.currentStory = _currentEvent.storyName;
+    [_delegate setTextForStoryView:_currentEvent.eventText];
+    [self updateStoryViewButtons];
 }
 
 -(void)parseNewScene:(NSString *)scene
 {
     _parser = [SceneParser new];
     [_parser startParsingFile:scene];
+}
+
+-(NSString *)getPastEventTextForDirection:(BOOL)isForwardDirection
+{
+    if(isForwardDirection){
+        _userStateManager.mainCharacter.currentEventIndex++;
+    } else {
+        _userStateManager.mainCharacter.currentEventIndex--;
+    }
+    Event *event = [Event new];
+    if([_userStateManager.mainCharacter.eventHistory count]-1>=_userStateManager.mainCharacter.currentEventIndex){
+        event = [_userStateManager.mainCharacter.eventHistory objectAtIndex:_userStateManager.mainCharacter.currentEventIndex];
+        [self updateStoryViewButtons];
+    }
+    return event.eventText;
+}
+
+-(void)updateStoryViewButtons
+{
+    BOOL showYesButton = NO;
+    BOOL showNoButton = NO;
+    BOOL showForwardButton = NO;
+    BOOL showBackButton = NO;
+    
+    NSLog(@"MATT TEST: Event history count - %lu",(unsigned long)[_userStateManager.mainCharacter.eventHistory count]);
+    NSLog(@"MATT TEST: Current Index - %lu",(unsigned long)_userStateManager.mainCharacter.currentEventIndex);
+    if(_userStateManager.mainCharacter.currentEvent.isEnding){
+        showYesButton = NO;
+        showNoButton = NO;
+        showBackButton = YES;
+        showForwardButton = NO;
+    }
+    //We are at the very beginning of the story
+    else if([_userStateManager.mainCharacter.eventHistory count]==1 && _userStateManager.mainCharacter.currentEventIndex == 0){
+        showYesButton = YES;
+        showNoButton = YES;
+        showForwardButton = NO;
+    } else {
+        Event *event = [Event new];
+        if([_userStateManager.mainCharacter.eventHistory count]>=_userStateManager.mainCharacter.currentEventIndex){
+            event = [_userStateManager.mainCharacter.eventHistory objectAtIndex:_userStateManager.mainCharacter.currentEventIndex];
+        }
+        //We are somewhere in the middle
+        if(_userStateManager.mainCharacter.currentEventIndex < [_userStateManager.mainCharacter.eventHistory count]-1 && _userStateManager.mainCharacter.currentEventIndex !=0){
+            if(event.answer){
+                showYesButton = YES;
+                showNoButton = NO;
+            } else {
+                showYesButton = NO;
+                showNoButton = YES;
+            }
+            showBackButton = YES;
+            showForwardButton = YES;
+        }
+        //We are at the beginning but we have started the story
+        else if([_userStateManager.mainCharacter.eventHistory count]>1 && _userStateManager.mainCharacter.currentEventIndex == 0){
+            if(event.answer){
+                showYesButton = YES;
+                showNoButton = NO;
+            } else {
+                showYesButton = NO;
+                showNoButton = YES;
+            }
+            showBackButton = NO;
+            showForwardButton = YES;
+        }
+        //We are at the current event and have started the story
+        else if([_userStateManager.mainCharacter.eventHistory count]-1 == _userStateManager.mainCharacter.currentEventIndex){
+            showYesButton = YES;
+            showNoButton = YES;
+            showBackButton = YES;
+            showForwardButton = NO;
+        }
+    }
+    NSLog(@"MATT TEST: show back button is: %@",showBackButton ? @"YES" : @"NO");
+    [_delegate showYesButtonForStoryView:showYesButton
+                             andNoButton:showNoButton
+                           andBackButton:showBackButton
+                        andForwardButton:showForwardButton];
+}
+
+-(void)setupStory
+{
+    [self parseNewScene:_currentEvent ? _currentEvent.storyName : _userStateManager.mainCharacter.currentStory];
+    _currentEvent = _userStateManager.mainCharacter.currentEvent;
+}
+
+-(void)saveState
+{
+    _userStateManager.mainCharacter.currentEvent = _currentEvent;
+    [_userStateManager saveCharacter:_userStateManager.mainCharacter];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"EventsReceivedNotification" object:nil];
 }
 
 @end

@@ -11,8 +11,10 @@
 @interface Event : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *eventText;
-@property (nonatomic, strong) NSString *answer;
+@property (nonatomic, strong) NSString *storyName;
+@property BOOL answer;
 @property int key;
 @property BOOL isScene;
+@property BOOL isEnding;
 
 @end

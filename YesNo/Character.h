@@ -18,5 +18,6 @@
 @property (strong,nonatomic) NSString *currentStory;
 @property (strong,nonatomic) Event *currentEvent;
 @property (strong,nonatomic) NSMutableArray *eventHistory;
+@property int currentEventIndex;
 
 @end

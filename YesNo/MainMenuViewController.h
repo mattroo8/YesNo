@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainMenuNavDelegate.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <MainMenuNavDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *beginStoryButton;
 @property (weak, nonatomic) IBOutlet UIButton *continueStoryButton;
+
+@property (strong, nonatomic) UINavigationController *navController;
 
 @end
 

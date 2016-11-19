@@ -18,6 +18,7 @@
     [encoder encodeObject:self.currentStory forKey:@"currentStory"];
     [encoder encodeObject:self.currentEvent forKey:@"currentEvent"];
     [encoder encodeObject:self.eventHistory forKey:@"eventHistory"];
+    [encoder encodeInt:self.currentEventIndex forKey:@"currentEventIndex"];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
@@ -29,6 +30,7 @@
         self.currentStory = [decoder decodeObjectForKey:@"currentStory"];
         self.currentEvent = [decoder decodeObjectForKey:@"currentEvent"];
         self.eventHistory = [decoder decodeObjectForKey:@"eventHistory"];
+        self.currentEventIndex = [decoder decodeIntForKey:@"currentEventIndex"];
     }
     return self;
 }

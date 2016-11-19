@@ -23,8 +23,10 @@
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict;
 {
     _element = elementName;
+    NSLog(@"MATT TEST!@!: %@ %@",elementName , [attributeDict valueForKey:@"name"]);
     if ([_element isEqualToString:@"scene"]) {
         _events = [NSMutableArray new];
+        _storyName = [attributeDict valueForKey:@"name"];
     }
 }
 
@@ -38,13 +40,16 @@
         
         if([_element isEqualToString:@"event"]){
             _event = [Event new];
+            _event.storyName = _storyName;
             _event.eventText = string;
         } else if ([_element isEqualToString:@"answer"]){
-            _event.answer = string;
+            _event.answer = [string boolValue];
         } else if([_element isEqualToString:@"key"]){
             _event.key = [string intValue];
-        }else if([_element isEqualToString:@"isScene"]){
+        } else if([_element isEqualToString:@"isScene"]){
             _event.isScene = [string boolValue];
+        } else if([_element isEqualToString:@"isEnding"]){
+            _event.isEnding = [string boolValue];
         }
     }
 }

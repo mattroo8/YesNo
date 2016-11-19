@@ -12,7 +12,7 @@
 #import "Character.h"
 #import "MainMenuViewController.h"
 
-@interface AdventureViewController : UIViewController<UITextFieldDelegate>
+@interface AdventureViewController : UIViewController<UITextFieldDelegate, StoryManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -24,5 +24,7 @@
 @property (strong, nonatomic) StoryManager *storyManager;
 @property (strong, nonatomic) Character *mainCharacter;
 @property (strong, nonatomic) UserStateManager *userStateManager;
+
+@property BOOL presentedFromCharacterSetup;
 
 @end

@@ -17,7 +17,6 @@
 		286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */; };
 		286E1EC31C669BBA0052F410 /* youAreNotABiologyProfessor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */; };
 		286E1EC41C669BBA0052F410 /* youAreNotAnAthlete.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */; };
-		286F13B11C60112800D148EB /* eveningscene.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286F13B01C60112800D148EB /* eveningscene.xml */; };
 		286F13B41C6289B400D148EB /* arrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 286F13B21C6289B400D148EB /* arrowRight.png */; };
 		286F13B51C6289B400D148EB /* arrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 286F13B31C6289B400D148EB /* arrowLeft.png */; };
 		287623A11C41A0880017E74C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623A01C41A0880017E74C /* main.m */; };
@@ -29,7 +28,6 @@
 		287623D81C427E540017E74C /* AdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623D71C427E540017E74C /* AdventureViewController.m */; };
 		287623DB1C42DEFB0017E74C /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623DA1C42DEFB0017E74C /* Character.m */; };
 		287623E11C430DFB0017E74C /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623E01C430DFB0017E74C /* Scene.m */; };
-		289710DA1C4EF0AA002219D4 /* afternoonscene.xml in Resources */ = {isa = PBXBuildFile; fileRef = 289710D91C4EF0AA002219D4 /* afternoonscene.xml */; };
 		289710DD1C503663002219D4 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 289710DC1C503663002219D4 /* Event.m */; };
 		28BB86B31C5416E4007EDF79 /* StoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BB86B21C5416E4007EDF79 /* StoryManager.m */; };
 		28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86B81C543692007EDF79 /* AdventureView.xib */; };
@@ -75,7 +73,6 @@
 		286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreAnAthlete.xml; sourceTree = "<group>"; };
 		286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreNotABiologyProfessor.xml; sourceTree = "<group>"; };
 		286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreNotAnAthlete.xml; sourceTree = "<group>"; };
-		286F13B01C60112800D148EB /* eveningscene.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eveningscene.xml; sourceTree = "<group>"; };
 		286F13B21C6289B400D148EB /* arrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowRight.png; sourceTree = "<group>"; };
 		286F13B31C6289B400D148EB /* arrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowLeft.png; sourceTree = "<group>"; };
 		2876239C1C41A0880017E74C /* YesNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,9 +95,9 @@
 		287623DA1C42DEFB0017E74C /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		287623DF1C430DFB0017E74C /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		287623E01C430DFB0017E74C /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
-		289710D91C4EF0AA002219D4 /* afternoonscene.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = afternoonscene.xml; sourceTree = "<group>"; };
 		289710DB1C503663002219D4 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		289710DC1C503663002219D4 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuNavDelegate.h; sourceTree = "<group>"; };
 		28BB86B11C5416E4007EDF79 /* StoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryManager.h; sourceTree = "<group>"; };
 		28BB86B21C5416E4007EDF79 /* StoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryManager.m; sourceTree = "<group>"; };
 		28BB86B81C543692007EDF79 /* AdventureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdventureView.xib; sourceTree = "<group>"; };
@@ -111,6 +108,7 @@
 		28E7F69D1C67CFCC0011C587 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		28E7F69E1C67CFCC0011C587 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		28E7F69F1C67CFCC0011C587 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		28E7F6A61C6909310011C587 /* StoryManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryManagerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +181,7 @@
 		2876239E1C41A0880017E74C /* YesNo */ = {
 			isa = PBXGroup;
 			children = (
+				28E7F6A51C6908290011C587 /* Protocols */,
 				286F13B61C628A0500D148EB /* Resources */,
 				28BB86B71C54365A007EDF79 /* Views */,
 				28BB86B61C541C69007EDF79 /* Managers */,
@@ -204,8 +203,6 @@
 				286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */,
 				286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */,
 				286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */,
-				286F13B01C60112800D148EB /* eveningscene.xml */,
-				289710D91C4EF0AA002219D4 /* afternoonscene.xml */,
 				285A1E8C1C4B0A9D0079F4C7 /* morningscene.xml */,
 				287623A01C41A0880017E74C /* main.m */,
 			);
@@ -281,6 +278,15 @@
 				28BB86BC1C543713007EDF79 /* MainMenuView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		28E7F6A51C6908290011C587 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				28E7F6A61C6909310011C587 /* StoryManagerDelegate.h */,
+				289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,10 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				287623AC1C41A0880017E74C /* Assets.xcassets in Resources */,
-				286F13B11C60112800D148EB /* eveningscene.xml in Resources */,
 				28E7F6A41C67CFCC0011C587 /* Icon-Small@2x.png in Resources */,
 				28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */,
-				289710DA1C4EF0AA002219D4 /* afternoonscene.xml in Resources */,
 				285A1E8D1C4B0A9D0079F4C7 /* morningscene.xml in Resources */,
 				286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */,
 				28E7F6A31C67CFCC0011C587 /* Icon-60@3x.png in Resources */,

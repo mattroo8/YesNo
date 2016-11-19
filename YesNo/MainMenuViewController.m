@@ -13,6 +13,7 @@
 
 @interface MainMenuViewController ()
 
+
 @end
 
 @implementation MainMenuViewController
@@ -33,18 +34,28 @@
 
 - (IBAction)maineMenuNewStoryButtonPressed:(id)sender {
     
-    [self presentViewController:[CharacterSetupViewController new] animated:YES completion:nil];
+    CharacterSetupViewController *csvc = [CharacterSetupViewController new];
+    csvc.delegate = self;
+    [self presentViewController:csvc animated:YES completion:nil];
 }
 
 - (IBAction)mainMenuContinueStoryButtonPressed:(id)sender {
     
-    [self presentViewController:[AdventureViewController new] animated:YES completion:nil];
+    AdventureViewController *advc = [AdventureViewController new];
+    advc.presentedFromCharacterSetup = NO;
+    [self presentViewController:advc animated:YES completion:nil];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
 }
+
+-(void)presentViewController:(UIViewController *)vc
+{
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 
 
