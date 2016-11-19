@@ -16,6 +16,7 @@
     [encoder encodeInt:self.key forKey:@"key"];
     [encoder encodeBool:self.isScene forKey:@"isScene"];
     [encoder encodeBool:self.isEnding forKey:@"isEnding"];
+    [encoder encodeInt:(int)self.decision forKey:@"decision"];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
@@ -25,6 +26,7 @@
         self.key = [decoder decodeIntForKey:@"key"];
         self.isScene = [decoder decodeBoolForKey:@"isScene"];
         self.isEnding = [decoder decodeBoolForKey:@"isEnding"];
+        self.decision = [decoder decodeIntForKey:@"decision"];
     }
     return self;
 }

@@ -7,7 +7,6 @@
 //
 
 #import "SceneParser.h"
-#import "Event.h"
 
 @implementation SceneParser
 
@@ -40,6 +39,7 @@
         
         if([_element isEqualToString:@"event"]){
             _event = [Event new];
+            _event.decision = Undecided;
             _event.storyName = _storyName;
             _event.eventText = string;
         } else if ([_element isEqualToString:@"answer"]){

@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "TreeNode.h"
-#import "Event.h"
 
 @interface Tree : NSObject
 

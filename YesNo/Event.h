@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DecisionEnum.h"
 
 @interface Event : NSObject <NSCoding>
 
@@ -16,5 +17,6 @@
 @property int key;
 @property BOOL isScene;
 @property BOOL isEnding;
+@property DecisionEnum decision;
 
 @end
