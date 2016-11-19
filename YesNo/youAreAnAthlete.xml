@@ -1,25 +1,21 @@
 <scene name="youAreAnAthlete">
 <!--First event-->
 <event>You think to yourself, that you must be a sports professional of some kind. You leave the room and walk down the hallway and open the front door. You're out in the country side, the cool breeze ruffles your hair as you walk out into a bright spring day. There is a road which runs right passed the house and a barn yard a couple of yards from the house. Do you check out the barn yard?</event>
-<answer>yes</answer>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
 <event>You decide to go for a jog down the road and come across a broken down car. It looks like there is someone inside, do you help them?</event>
-<answer>no</answer>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
 <event>You make your way over to the barn yard and go inside. Its old and musky with straw hanging from the rafters. You can hear a people talking at the back of the barn. Do you interupt them?</event>
-<answer>yes</answer>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
@@ -27,19 +23,16 @@
 <event>You survived! Please take a screenshot of this screen and share it on instagram with #YesNoMobile and we will contact you about your prize.
     
     UUID</event>
-<answer>no</answer>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

@@ -1,13 +1,11 @@
 <scene name="youAreABiologyProfessor">
 <!--First event-->
 <event>You seem pretty sure after reading through the notes that this is in fact your work. You pull out the seat from under the desk and continue to read through the papers. It looks like you're writing a paper on genetic mutations. The books stacked on the desk are all related to this topic. As you read on it become clear to you that what you are proposing is highly unethical. You then see a photograph peaking out from under a stack of notes. It is a picture of a young child with a strange deformity on its legs and arms. As you closer you can see that the child has instead of fingers and toes, he has what looks like claws. You find a number on one of the pieces of paper. Do you ring it?</event>
-<answer>yes</answer>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
 <event>You don't call the number, but instead you walk out of the room into the hall. It's a small narrow hallway with a door right across from you. You turn right and walk to the end of the hall into the kitchen. You get a waft of warm stew which has filled the air. On the cooker there is a pot with food in it. You walk over and look into the pot, it looks pretty good, do you try some?</event>
-<answer>no</answer>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
@@ -23,31 +21,26 @@ You wonder about what you should say...
 A minute passes and Amy begins to speak again.
 "Hmmm we have no one under the name of john smith, I'm sorry but i cannot transfer you, have a nice day."
 The line drops. You take a seat and wonder what you should do next when suddenly you hear a loud bang. It sounds like the front door of the place has been blown open. Do you go check it out?</event>
-<answer>yes</answer>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

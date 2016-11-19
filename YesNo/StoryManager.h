@@ -25,7 +25,7 @@
 
 -(id)init;
 -(void)setupStory;
--(void)getNextTextForChoice:(BOOL)choice;
+-(void)getNextTextForChoice:(DecisionEnum)choice;
 -(NSString *)getPastEventTextForDirection:(BOOL)isForwardDirection;
 -(void)saveState;
 

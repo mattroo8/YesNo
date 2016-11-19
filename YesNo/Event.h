@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) NSString *eventText;
 @property (nonatomic, strong) NSString *storyName;
-@property BOOL answer;
 @property int key;
 @property BOOL isScene;
 @property BOOL isEnding;

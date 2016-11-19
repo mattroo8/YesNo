@@ -51,13 +51,13 @@
     }
 }
 
--(Event *)getNextEventForChoice:(BOOL)choice
+-(Event *)getNextEventForChoice:(DecisionEnum)choice
 {
     if(!_currentNode){
         _currentNode = self.root;
         return _currentNode.event;
     } else {
-        if(choice){
+        if(choice == YesDecision){
             if(_currentNode.rightChild){
                 _currentNode = _currentNode.rightChild;
                 return _currentNode.event;

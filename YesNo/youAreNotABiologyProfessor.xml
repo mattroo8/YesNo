@@ -1,43 +1,36 @@
 <scene name="youAreNotABiologyProfessor">
 <!--First event-->
 <event>Then who wrote this stuff and who's house are you in, you wonder. You exit the room and walk out into a narrow hallway. There is a door right acroos from the room you just left. Do you go inside?'</event>
-<answer>yes</answer>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
 <event>You decide not to walk into the room but instead walk down the hallway into what looks to be the kitchen. The TV is on and its loud, whoever lives here must be deaf. There is a rerun of friends on, do you sit down to watch it?</event>
-<answer>no</answer>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
 <event>You open the door to the room. It looks like a young boys room, maybe a kid of 8 or 9. Toys are scattered across the room, you almost trip over one as you search for a light. You turn on the light and in the corner of the room there is a kid sleeping. Do you wake him up?</event>
-<answer>yes</answer>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

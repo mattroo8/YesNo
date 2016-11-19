@@ -42,8 +42,6 @@
             _event.decision = Undecided;
             _event.storyName = _storyName;
             _event.eventText = string;
-        } else if ([_element isEqualToString:@"answer"]){
-            _event.answer = [string boolValue];
         } else if([_element isEqualToString:@"key"]){
             _event.key = [string intValue];
         } else if([_element isEqualToString:@"isScene"]){

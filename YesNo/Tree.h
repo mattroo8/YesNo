@@ -15,7 +15,7 @@
 @property (strong,nonatomic)TreeNode *currentNode;
 
 -(void)insertNodeWithEvent:(Event *)event;
--(Event *)getNextEventForChoice:(BOOL)choice;
+-(Event *)getNextEventForChoice:(DecisionEnum)choice;
 -(void)setLeafNodes;
 -(Event *)searchNodeForKey:(int)key;
 

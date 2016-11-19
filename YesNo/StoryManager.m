@@ -28,10 +28,10 @@
     return self;
 }
 
--(void)getNextTextForChoice:(BOOL)choice
+-(void)getNextTextForChoice:(DecisionEnum)decision
 {
-    _currentEvent.answer = choice;
-    Event *event = [_storyTree getNextEventForChoice:choice];
+    _currentEvent.decision = decision;
+    Event *event = [_storyTree getNextEventForChoice:decision];
     if(event.isScene){
         [self parseNewScene:event.eventText];
     } else if(event.isEnding){
@@ -120,7 +120,7 @@
         }
         //We are somewhere in the middle
         if(_mainCharacter.currentEventIndex < [_mainCharacter.eventHistory count]-1 && _mainCharacter.currentEventIndex !=0){
-            if(event.answer){
+            if(event.decision == YesDecision){
                 showYesButton = YES;
                 showNoButton = NO;
             } else {
@@ -132,7 +132,7 @@
         }
         //We are at the beginning but we have started the story
         else if([_mainCharacter.eventHistory count]>1 && _mainCharacter.currentEventIndex == 0){
-            if(event.answer){
+            if(event.decision == YesDecision){
                 showYesButton = YES;
                 showNoButton = NO;
             } else {
@@ -166,11 +166,6 @@
 {
     _mainCharacter.currentEvent = _currentEvent;
     [_userStateManager saveCharacter:_mainCharacter];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"EventsReceivedNotification" object:nil];
 }
 
 @end

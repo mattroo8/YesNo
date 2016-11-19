@@ -1,43 +1,36 @@
 <scene name="youAreNotAnAthlete">
 <!--First event-->
 <event>They must not be your clothes, you keep them on anyway as they are comfortable. You exit the room and make your way up the hallway and out the front door. Its a lovely summers day, the warm breeze heats your face and you walk out into the city. You see a coffee place, do you go inside?</event>
-<answer>yes</answer>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
 <event>You go inside and ask for a coffee</event>
-<answer>no</answer>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
 <event>You continue walking/</event>
-<answer>yes</answer>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
 <event>afternoonscene</event>
-<answer>no</answer>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
 <event>afternoonscene</event>
-<answer>yes</answer>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
