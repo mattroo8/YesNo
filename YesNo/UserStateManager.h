@@ -15,7 +15,6 @@
 -(void)saveCharacter:(Character *)character;
 -(Character *)loadCharacter;
 -(void)saveProgress:(Scene *)scene;
--(Scene *)loadScene;
 +(UserStateManager*)sharedUserStateManager;
 
 @end

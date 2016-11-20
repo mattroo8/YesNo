@@ -76,10 +76,4 @@ static UserStateManager* _sharedUserState = nil;
     [NSKeyedArchiver archiveRootObject:myObject toFile:_sceneFile];
 }
 
--(Scene *)loadScene
-{
-    NSMutableArray* myArray = [NSKeyedUnarchiver unarchiveObjectWithFile:_sceneFile];
-    return [myArray objectAtIndex:0];
-}
-
 @end
