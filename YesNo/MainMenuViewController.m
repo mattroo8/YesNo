@@ -26,6 +26,8 @@
 {
     if([[UserStateManager sharedUserStateManager]loadCharacter]){
         _continueStoryButton.hidden = NO;
+    } else {
+        _continueStoryButton.hidden = YES;
     }
 }
 

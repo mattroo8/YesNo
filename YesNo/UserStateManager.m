@@ -76,4 +76,15 @@ static UserStateManager* _sharedUserState = nil;
     [NSKeyedArchiver archiveRootObject:myObject toFile:_sceneFile];
 }
 
+-(void)deleteProgress
+{
+    NSError *error;
+    if ([[NSFileManager defaultManager] isDeletableFileAtPath:_characterFile]) {
+        BOOL success = [[NSFileManager defaultManager] removeItemAtPath:_characterFile error:&error];
+        if (!success) {
+            NSLog(@"Error removing file at path: %@", error.localizedDescription);
+        }
+    }
+}
+
 @end

@@ -35,12 +35,14 @@
     if(event.isScene){
         [self parseNewScene:event.eventText];
     } else if(event.isEnding){
+        _currentEvent = event;
         NSString *uniqueId = [_mainCharacter.firstName stringByAppendingString:[[NSUUID UUID] UUIDString]];
         _currentEvent.eventText = [event.eventText stringByReplacingOccurrencesOfString:@"UUID"
                                                                  withString:uniqueId];
 
         [_delegate showYesButtonForStoryView:NO andNoButton:NO andBackButton:NO andForwardButton:NO];
         [_delegate setTextForStoryView:_currentEvent.eventText];
+        [[UserStateManager sharedUserStateManager]deleteProgress];
     } else {
         _currentEvent = event;
         [_mainCharacter.eventHistory addObject:_currentEvent];
@@ -156,8 +158,10 @@
 
 -(void)saveState
 {
-    _mainCharacter.currentEvent = _currentEvent;
-    [[UserStateManager sharedUserStateManager] saveCharacter:_mainCharacter];
+    if(!_currentEvent.isEnding){
+        _mainCharacter.currentEvent = _currentEvent;
+        [[UserStateManager sharedUserStateManager] saveCharacter:_mainCharacter];
+    }
 }
 
 @end
