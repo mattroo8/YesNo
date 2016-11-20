@@ -100,8 +100,7 @@
     BOOL showForwardButton = NO;
     BOOL showBackButton = NO;
     
-    NSLog(@"MATT TEST: Event history count - %lu",(unsigned long)[_mainCharacter.eventHistory count]);
-    NSLog(@"MATT TEST: Current Index - %lu",(unsigned long)_mainCharacter.currentEventIndex);
+    //We are at the end of the story
     if(_mainCharacter.currentEvent.isEnding){
         showYesButton = NO;
         showNoButton = NO;
@@ -112,14 +111,14 @@
     else if([_mainCharacter.eventHistory count]==1 && _mainCharacter.currentEventIndex == 0){
         showYesButton = YES;
         showNoButton = YES;
-        showForwardButton = NO;
     } else {
-        Event *event = [Event new];
-        if([_mainCharacter.eventHistory count]>=_mainCharacter.currentEventIndex){
+        Event *event;
+        if([_mainCharacter.eventHistory count]>_mainCharacter.currentEventIndex){
             event = [_mainCharacter.eventHistory objectAtIndex:_mainCharacter.currentEventIndex];
         }
+        
         //We are somewhere in the middle
-        if(_mainCharacter.currentEventIndex < [_mainCharacter.eventHistory count]-1 && _mainCharacter.currentEventIndex !=0){
+        if(_mainCharacter.currentEventIndex < [_mainCharacter.eventHistory count]-1){
             if(event.decision == YesDecision){
                 showYesButton = YES;
                 showNoButton = NO;
@@ -127,20 +126,13 @@
                 showYesButton = NO;
                 showNoButton = YES;
             }
-            showBackButton = YES;
-            showForwardButton = YES;
-        }
-        //We are at the beginning but we have started the story
-        else if([_mainCharacter.eventHistory count]>1 && _mainCharacter.currentEventIndex == 0){
-            if(event.decision == YesDecision){
-                showYesButton = YES;
-                showNoButton = NO;
+            if(_mainCharacter.currentEventIndex == 0){
+                showBackButton = NO;
+                showForwardButton = YES;
             } else {
-                showYesButton = NO;
-                showNoButton = YES;
+                showBackButton = YES;
+                showForwardButton = YES;
             }
-            showBackButton = NO;
-            showForwardButton = YES;
         }
         //We are at the current event and have started the story
         else if([_mainCharacter.eventHistory count]-1 == _mainCharacter.currentEventIndex){
@@ -165,7 +157,7 @@
 -(void)saveState
 {
     _mainCharacter.currentEvent = _currentEvent;
-    [_userStateManager saveCharacter:_mainCharacter];
+    [[UserStateManager sharedUserStateManager] saveCharacter:_mainCharacter];
 }
 
 @end
