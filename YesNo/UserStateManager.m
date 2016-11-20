@@ -51,7 +51,6 @@ static UserStateManager* _sharedUserState = nil;
 -(void)saveCharacter:(Character *)character
 {
     if(!character){
-        NSLog(@"Character is nil, cannot save");
         return;
     }
     NSMutableArray *myObject=[NSMutableArray array];

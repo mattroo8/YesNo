@@ -25,7 +25,6 @@
 -(void)insertNodeWithEvent:(Event *)event andNode:(TreeNode *)node
 {
     if(!self.root){
-        NSLog(@"MATT TEST Creating root node with event: %@",event.eventText);
         self.root = [[TreeNode alloc]initWithEvent:event];
         _currentNode = self.root;
     } else {
@@ -62,7 +61,6 @@
                 _currentNode = _currentNode.rightChild;
                 return _currentNode.event;
             } else {
-                NSLog(@"Reached end of right side of tree...");
                 return nil;
             }
         } else {
@@ -70,7 +68,6 @@
                 _currentNode = _currentNode.leftChild;
                 return _currentNode.event;
             } else {
-                NSLog(@"Reached end of left side of tree...");
                 return nil;
             }
         }
@@ -92,7 +89,6 @@
     }
     
     if (!currentNode.leftChild && !currentNode.rightChild) {
-        NSLog(@"Setting event: %@ as leaf node",currentNode.event.eventText);
         currentNode.isLeaf = TRUE;
     } else{
         [self setLeafNode:currentNode.leftChild];

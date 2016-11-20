@@ -22,7 +22,6 @@
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict;
 {
     _element = elementName;
-    NSLog(@"MATT TEST!@!: %@ %@",elementName , [attributeDict valueForKey:@"name"]);
     if ([_element isEqualToString:@"scene"]) {
         _events = [NSMutableArray new];
         _storyName = [attributeDict valueForKey:@"name"];

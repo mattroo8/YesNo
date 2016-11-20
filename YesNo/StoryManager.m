@@ -144,7 +144,6 @@
             showForwardButton = NO;
         }
     }
-    NSLog(@"MATT TEST: show back button is: %@",showBackButton ? @"YES" : @"NO");
     [_delegate showYesButtonForStoryView:showYesButton
                              andNoButton:showNoButton
                            andBackButton:showBackButton

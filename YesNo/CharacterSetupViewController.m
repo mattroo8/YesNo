@@ -38,21 +38,19 @@
 
 - (IBAction)continuePressed:(id)sender {
     
-        NSString *message = nil;
-        BOOL showAlert = NO;
-        
-        if(!_firstNameTextField.text || [_firstNameTextField.text length]==0){
-            message = @"Please enter your first name";
-            showAlert = YES;
-        } else if(!_lastNameTextField.text || [_lastNameTextField.text length]==0){
-            message = @"Please enter your last name";
-            showAlert = YES;
-        } else if(!_ageTextField.text || [_ageTextField.text length]==0){
-            message = @"Please enter your age";
-            showAlert = YES;
-        } else {
-            NSLog(@"All details filled in");
-        }
+    NSString *message = nil;
+    BOOL showAlert = NO;
+    
+    if(!_firstNameTextField.text || [_firstNameTextField.text length]==0){
+        message = @"Please enter your first name";
+        showAlert = YES;
+    } else if(!_lastNameTextField.text || [_lastNameTextField.text length]==0){
+        message = @"Please enter your last name";
+        showAlert = YES;
+    } else if(!_ageTextField.text || [_ageTextField.text length]==0){
+        message = @"Please enter your age";
+        showAlert = YES;
+    }
     
     if(showAlert){
         

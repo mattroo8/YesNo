@@ -34,8 +34,6 @@
         choice = YES;
     } else if (button.tag == 2) {
         choice = NO;
-    } else {
-        NSLog(@"Button not identified");
     }
     [_storyManager getNextTextForChoice:choice];
 }
@@ -69,9 +67,7 @@
                      andNoButton:(BOOL)noButton
                    andBackButton:(BOOL)backButton
                 andForwardButton:(BOOL)forwardButton
-{
-    NSLog(@"MATT TEST: backButton is now: %@",backButton ? @"YES" : @"NO");
-    
+{    
     _yesButton.hidden = !yesButton;
     _noButton.hidden = !noButton;
     _yesButton.enabled = yesButton && noButton;
