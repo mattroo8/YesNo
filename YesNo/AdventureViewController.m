@@ -19,6 +19,7 @@
     _storyManager = [[StoryManager alloc]init];
     _storyManager.delegate = self;
     [_storyManager setupStory];
+    [_textView setEditable:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,19 +49,12 @@
 {
     BOOL isForwardDirection = NO;
     _textView.text = [_storyManager getPastEventTextForDirection:isForwardDirection];
-    [self resetScrollView];
 }
 
 - (IBAction)forwardButtonPressed:(id)sender
 {
     BOOL isForwardDirection = YES;
     _textView.text = [_storyManager getPastEventTextForDirection:isForwardDirection];
-    [self resetScrollView];
-}
-
--(void)resetScrollView
-{
-    [_textView setContentOffset:CGPointMake(_scrollView.contentOffset.x, (-1) * _scrollView.contentInset.top) animated:NO];
 }
 
 -(void)showYesButtonForStoryView:(BOOL)yesButton
@@ -79,7 +73,11 @@
 -(void)setTextForStoryView:(NSString *)text
 {
     _textView.text = text;
-    [self resetScrollView];
+}
+
+-(void)textViewDidBeginEditing:(UITextView *)textView
+{
+    [textView resignFirstResponder];
 }
 
 

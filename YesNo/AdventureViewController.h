@@ -12,14 +12,13 @@
 #import "Character.h"
 #import "MainMenuViewController.h"
 
-@interface AdventureViewController : UIViewController<UITextFieldDelegate, StoryManagerDelegate>
+@interface AdventureViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate, StoryManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (strong, nonatomic) StoryManager *storyManager;
 @property (strong, nonatomic) Character *mainCharacter;

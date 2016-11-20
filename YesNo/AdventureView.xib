@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdventureViewController">
@@ -11,7 +10,6 @@
                 <outlet property="backButton" destination="TDK-td-vgg" id="kQy-cV-Rlm"/>
                 <outlet property="forwardButton" destination="nsy-Rh-FJO" id="LA4-si-s2n"/>
                 <outlet property="noButton" destination="O1P-0x-o2R" id="Rp3-cY-3kF"/>
-                <outlet property="scrollView" destination="lLo-rP-d4e" id="j7l-yV-WqU"/>
                 <outlet property="textView" destination="kal-Rh-Abs" id="paH-lG-tos"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cRH-CJ-P0i"/>
                 <outlet property="yesButton" destination="oJz-zJ-OQP" id="CXq-5d-Ror"/>
@@ -22,35 +20,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-rP-d4e">
-                    <rect key="frame" x="8" y="24" width="398" height="568"/>
-                    <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kal-Rh-Abs">
-                            <rect key="frame" x="49" y="30" width="301" height="362"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="362" id="9dS-Fb-gES"/>
-                            </constraints>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="kal-Rh-Abs" firstAttribute="centerX" secondItem="lLo-rP-d4e" secondAttribute="centerX" id="ZDG-Db-3n9"/>
-                        <constraint firstAttribute="bottom" secondItem="kal-Rh-Abs" secondAttribute="bottom" constant="40" id="ZWB-cp-5gH"/>
-                        <constraint firstAttribute="trailing" secondItem="kal-Rh-Abs" secondAttribute="trailing" constant="48" id="nrO-ab-TZL"/>
-                        <constraint firstAttribute="height" constant="432" id="uPK-dF-Ax5"/>
-                        <constraint firstItem="kal-Rh-Abs" firstAttribute="top" secondItem="lLo-rP-d4e" secondAttribute="top" constant="30" id="uYj-6O-kaJ"/>
-                        <constraint firstItem="kal-Rh-Abs" firstAttribute="leading" secondItem="lLo-rP-d4e" secondAttribute="leading" constant="49" id="vuN-4k-RUv"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="uPK-dF-Ax5"/>
-                        </mask>
-                    </variation>
-                </scrollView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kal-Rh-Abs">
+                    <rect key="frame" x="56" y="58" width="301" height="531"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJz-zJ-OQP">
                     <rect key="frame" x="30" y="620" width="78" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,17 +96,16 @@
                 <constraint firstItem="TDK-td-vgg" firstAttribute="top" secondItem="nsy-Rh-FJO" secondAttribute="top" id="AgA-87-9zC"/>
                 <constraint firstItem="oJz-zJ-OQP" firstAttribute="top" secondItem="O1P-0x-o2R" secondAttribute="top" id="GGJ-tn-Cey"/>
                 <constraint firstAttribute="trailing" secondItem="O1P-0x-o2R" secondAttribute="trailing" constant="26" id="GJL-Vw-hFn"/>
+                <constraint firstItem="kal-Rh-Abs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="58" id="I87-xF-fWA"/>
                 <constraint firstItem="oJz-zJ-OQP" firstAttribute="bottom" secondItem="O1P-0x-o2R" secondAttribute="bottom" id="LHE-yW-9Vf"/>
-                <constraint firstItem="lLo-rP-d4e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="N1C-dT-4ut"/>
-                <constraint firstItem="lLo-rP-d4e" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="VJN-Ge-7ql"/>
-                <constraint firstAttribute="bottom" secondItem="lLo-rP-d4e" secondAttribute="bottom" constant="144" id="bs0-IB-eqI"/>
-                <constraint firstItem="lLo-rP-d4e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="dlu-3B-juj"/>
+                <constraint firstAttribute="trailing" secondItem="kal-Rh-Abs" secondAttribute="trailing" constant="57" id="huj-aN-aah"/>
                 <constraint firstItem="EPX-GZ-0kB" firstAttribute="top" secondItem="TDK-td-vgg" secondAttribute="bottom" constant="8" symbolic="YES" id="ii4-nK-MTB"/>
+                <constraint firstItem="O1P-0x-o2R" firstAttribute="top" secondItem="kal-Rh-Abs" secondAttribute="bottom" constant="31" id="jxP-Yb-nuh"/>
                 <constraint firstItem="oJz-zJ-OQP" firstAttribute="baseline" secondItem="O1P-0x-o2R" secondAttribute="baseline" id="kVW-WL-w1f"/>
                 <constraint firstItem="EPX-GZ-0kB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mON-vz-5zA"/>
                 <constraint firstAttribute="bottom" secondItem="oJz-zJ-OQP" secondAttribute="bottom" constant="56" id="mix-KG-Lvy"/>
                 <constraint firstItem="TDK-td-vgg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-20" id="qJV-Bx-b1d"/>
-                <constraint firstItem="O1P-0x-o2R" firstAttribute="top" secondItem="lLo-rP-d4e" secondAttribute="bottom" constant="28" id="qlc-U6-FCk"/>
+                <constraint firstItem="kal-Rh-Abs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="56" id="tg1-WB-iWk"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
