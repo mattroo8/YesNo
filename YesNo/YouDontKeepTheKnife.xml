@@ -1,0 +1,37 @@
+<scene name="YouDontKeepTheKnife" >
+<!--First event-->
+<event>You dont think there is any use for the pen Knife. You keep rumaging through the bag and find a flash light. You switch it on and drop the back on the ground. You survey the area using the flash light. You are deep in the woods. You shine the light on the dark mound you noticed earlier. The light illuminates a green dress and long blonde hair. You walk over to the body. The dress is stained in blood. There is a deep gash on her forehead. She doesnt seem to breathing. Do you check her pulse?</event>
+<key>26</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Left child of the first event-->
+<event>You step away from the body and as you walk you trip and stumble over the root of a tree. You're leg is hurt and you find it hard to get back up. The cold is setting in and you can feel your body trembling uncontrollably. As you lay there you wonder how you get here and who that women is, and how she died. Her green dress looks familiar. You like the colour of the dress. She is an attractive women. The more you look at her the more the emotional connection grows in you. You love her. You drag yourself towards her through the mud and the dirt. Your core temperature is lowering dramatically. As you pull yourself up beside her you hug her and smell her hair. Do you say something to her?</event>
+<key>11</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Right child of the first event-->
+<event>You grab her wrist and press your fingers against her veins. You feel nothing. She's dead. Thoughts of how she died run through your mind. Did you kill her? You step back away from the body. Your stomach starts to turn at the possibility of you being a murderer. Do you leave the body?</event>
+<key>31</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Left child of the first events left child-->
+<event>YouDontSayAnything</event>
+<key>6</key>
+<isScene>yes</isScene>
+<isEnding>no</isEnding>
+<!--Right child of the first events left child-->
+<event>YouSaySomething</event>
+<key>17</key>
+<isScene>yes</isScene>
+<isEnding>no</isEnding>
+<!--Right child of the first events right child-->
+<event>YouDontLeaveTheBody</event>
+<key>44</key>
+<isScene>yes</isScene>
+<isEnding>no</isEnding>
+<!--Left child of the first events right child-->
+<event>YouLeaveTheBody</event>
+<key>30</key>
+<isScene>yes</isScene>
+<isEnding>no</isEnding>
+</scene>

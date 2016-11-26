@@ -36,18 +36,8 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [[[XCUIApplication alloc] init].buttons[@"New Story"] tap];
     
-    XCUIApplication *app = [[XCUIApplication alloc]init];
-    [app.buttons[@"New Story"] tap];
-    
-    XCUIElement *textField = [[app.scrollViews.otherElements childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:0];
-    [textField tap];
-    
-    XCUIApplication *app2 = app;
-    [app2.keys[@"m"] tap];
-    [app2.keys[@"a"] tap];
-    [app2.keys[@"t"] tap];
-    [app2.keys[@"t"] tap];
 }
 
 @end

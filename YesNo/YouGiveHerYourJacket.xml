@@ -1,11 +1,11 @@
-<scene name="morningscene" >
+<scene name="YouGiveHerYourJacket" >
 <!--First event-->
-<event>You wake up wet and cold. Your body aches all over. All you can see is darkness. You slowly sit up by pushing against the leaves and dirt underneath you. The moonlight reflects off of the surrounding trees. As you get to your feet you feel dizzy and unstable. You scope the surrounding area and see a dark mound five feet away...do you check it out?</event>
+<event>You take off your Jacket and wrap it around her. You can see her breath like smoke rising through the air. "Where am I?" She asks. "Who are you?" You are not sure what to say, so you stay quiet and respond by tucking the jacket in under her back. Her shivering has slowed down and she tries to sit up. Do you help her?</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You decide against it, and instead survey the ground around were you first woke up. There is a small rucksack which you pick up and begin to look through. There are a couple of chemistry books which you throw to the ground. You find at the bottom of the bag a pen knife. Do you keep it?</event>
+<event>You sit back and take a longer look at her as she sits up. You recognize her, but you can't tell from where.'</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
