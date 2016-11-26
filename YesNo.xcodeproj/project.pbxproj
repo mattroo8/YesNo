@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2817E48F1C445D2400BF046F /* CharacterSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817E48E1C445D2400BF046F /* CharacterSetupViewController.m */; };
 		285A1E8B1C4B069D0079F4C7 /* SceneParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 285A1E8A1C4B069D0079F4C7 /* SceneParser.m */; };
-		285A1E8D1C4B0A9D0079F4C7 /* morningscene.xml in Resources */ = {isa = PBXBuildFile; fileRef = 285A1E8C1C4B0A9D0079F4C7 /* morningscene.xml */; };
+		285A1E8D1C4B0A9D0079F4C7 /* YouDontKeepTheKnife.xml in Resources */ = {isa = PBXBuildFile; fileRef = 285A1E8C1C4B0A9D0079F4C7 /* YouDontKeepTheKnife.xml */; };
 		285AB3741C45B201005609B2 /* UserStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3731C45B201005609B2 /* UserStateManager.m */; };
 		285AB3771C4693C0005609B2 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3761C4693C0005609B2 /* TreeNode.m */; };
 		285AB37A1C46941D005609B2 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3791C46941D005609B2 /* Tree.m */; };
@@ -29,6 +29,11 @@
 		287623DB1C42DEFB0017E74C /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623DA1C42DEFB0017E74C /* Character.m */; };
 		287623E11C430DFB0017E74C /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623E01C430DFB0017E74C /* Scene.m */; };
 		289710DD1C503663002219D4 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 289710DC1C503663002219D4 /* Event.m */; };
+		28B29C5F1DE77A13001CB3D2 /* morningscene.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C5E1DE77A13001CB3D2 /* morningscene.xml */; };
+		28B29C611DE78035001CB3D2 /* YouKeepTheKnife.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C601DE78035001CB3D2 /* YouKeepTheKnife.xml */; };
+		28B29C631DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */; };
+		28B29C651DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */; };
+		28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */; };
 		28BB86B31C5416E4007EDF79 /* StoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BB86B21C5416E4007EDF79 /* StoryManager.m */; };
 		28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86B81C543692007EDF79 /* AdventureView.xib */; };
 		28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86BA1C5436E2007EDF79 /* CharacterSetupView.xib */; };
@@ -62,7 +67,7 @@
 		2817E48E1C445D2400BF046F /* CharacterSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSetupViewController.m; sourceTree = "<group>"; };
 		285A1E891C4B069D0079F4C7 /* SceneParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneParser.h; sourceTree = "<group>"; };
 		285A1E8A1C4B069D0079F4C7 /* SceneParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneParser.m; sourceTree = "<group>"; };
-		285A1E8C1C4B0A9D0079F4C7 /* morningscene.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = morningscene.xml; sourceTree = "<group>"; };
+		285A1E8C1C4B0A9D0079F4C7 /* YouDontKeepTheKnife.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontKeepTheKnife.xml; sourceTree = "<group>"; };
 		285AB3721C45B201005609B2 /* UserStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStateManager.h; sourceTree = "<group>"; };
 		285AB3731C45B201005609B2 /* UserStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStateManager.m; sourceTree = "<group>"; };
 		285AB3751C4693C0005609B2 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
@@ -98,6 +103,11 @@
 		289710DB1C503663002219D4 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		289710DC1C503663002219D4 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuNavDelegate.h; sourceTree = "<group>"; };
+		28B29C5E1DE77A13001CB3D2 /* morningscene.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = morningscene.xml; sourceTree = "<group>"; };
+		28B29C601DE78035001CB3D2 /* YouKeepTheKnife.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouKeepTheKnife.xml; sourceTree = "<group>"; };
+		28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouGiveHerYourJacket.xml; sourceTree = "<group>"; };
+		28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontGiverHerYourJacket.xml; sourceTree = "<group>"; };
+		28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontSayAnything.xml; sourceTree = "<group>"; };
 		28BB86B11C5416E4007EDF79 /* StoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryManager.h; sourceTree = "<group>"; };
 		28BB86B21C5416E4007EDF79 /* StoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryManager.m; sourceTree = "<group>"; };
 		28BB86B81C543692007EDF79 /* AdventureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdventureView.xib; sourceTree = "<group>"; };
@@ -225,14 +235,27 @@
 			path = YesNoUITests;
 			sourceTree = "<group>";
 		};
-		28B48DE91DE0C2D000F44C7E /* StoryXML */ = {
+		28B29C5D1DE779C8001CB3D2 /* Old */ = {
 			isa = PBXGroup;
 			children = (
 				286E1EBD1C669BBA0052F410 /* youAreABiologyProfessor.xml */,
 				286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */,
 				286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */,
 				286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */,
-				285A1E8C1C4B0A9D0079F4C7 /* morningscene.xml */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
+		28B48DE91DE0C2D000F44C7E /* StoryXML */ = {
+			isa = PBXGroup;
+			children = (
+				28B29C5D1DE779C8001CB3D2 /* Old */,
+				285A1E8C1C4B0A9D0079F4C7 /* YouDontKeepTheKnife.xml */,
+				28B29C5E1DE77A13001CB3D2 /* morningscene.xml */,
+				28B29C601DE78035001CB3D2 /* YouKeepTheKnife.xml */,
+				28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */,
+				28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */,
+				28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */,
 			);
 			name = StoryXML;
 			sourceTree = "<group>";
@@ -414,10 +437,13 @@
 			files = (
 				287623AC1C41A0880017E74C /* Assets.xcassets in Resources */,
 				28E7F6A41C67CFCC0011C587 /* Icon-Small@2x.png in Resources */,
+				28B29C611DE78035001CB3D2 /* YouKeepTheKnife.xml in Resources */,
 				28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */,
-				285A1E8D1C4B0A9D0079F4C7 /* morningscene.xml in Resources */,
+				285A1E8D1C4B0A9D0079F4C7 /* YouDontKeepTheKnife.xml in Resources */,
 				286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */,
 				28E7F6A31C67CFCC0011C587 /* Icon-60@3x.png in Resources */,
+				28B29C651DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml in Resources */,
+				28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */,
 				28BB86BD1C543713007EDF79 /* MainMenuView.xib in Resources */,
 				286F13B51C6289B400D148EB /* arrowLeft.png in Resources */,
 				286F13B41C6289B400D148EB /* arrowRight.png in Resources */,
@@ -425,7 +451,9 @@
 				28E7F6A01C67CFCC0011C587 /* Icon-40@2x.png in Resources */,
 				286E1EC41C669BBA0052F410 /* youAreNotAnAthlete.xml in Resources */,
 				286E1EC31C669BBA0052F410 /* youAreNotABiologyProfessor.xml in Resources */,
+				28B29C5F1DE77A13001CB3D2 /* morningscene.xml in Resources */,
 				28BB86BF1C554110007EDF79 /* Default-568h@2x.png in Resources */,
+				28B29C631DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml in Resources */,
 				28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */,
 				286E1EC11C669BBA0052F410 /* youAreABiologyProfessor.xml in Resources */,
 			);

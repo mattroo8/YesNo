@@ -5,7 +5,7 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You decide against it, and instead survey the ground around were you first woke up. There is a small rucksack which you pick up and begin to look through. There are a couple of chemistry books which you throw to the ground. You find at the bottom of the bag a pen knife. Do you keep it?</event>
+<event>You decide not to check it out but instead survey the ground around you where you first woke up. You come across a small rucksack which you pick up and begin to look through. There are a couple of chemistry books which you throw to the ground. You then find at the bottom of the bag a knife. Do you keep it?</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
