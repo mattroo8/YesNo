@@ -1,16 +1,16 @@
 <scene name="YouDontFight" >
 <!--First event-->
-<event>You keep your jacket on. As she comes to, she sees your face and becomes startled. She tries to get to her feet to run away. You grab her arm. "Let me go!" she roars. Do you let her go? </event>
+<event>TODO</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You dont let go but pull her closer to you. She struggles but as your grip increases she begins to tire. "Who are you?" she demands. Your silence scares her. Do you try to explain what happened?</event>
+<event>TODO</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
-<event>You let go of her arm and she runs into the darkness. You follow her and as you do she runs faster. She trips and falls to the ground. You catch up to her and as you get nearer she tries to crawl away from you. Do you help her up?</event>
+<event>TODO</event>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>

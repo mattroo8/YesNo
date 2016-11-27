@@ -1,11 +1,11 @@
 <scene name="YouFight" >
 <!--First event-->
-<event>You take off your Jacket and wrap it around her. You can see her breath like smoke rising through the air. "Where am I?" She asks. "Who are you?" You are not sure what to say, so you stay quiet and respond by tucking the jacket in under her back. Her shivering has slowed down and she tries to sit up. Do you help her?</event>
+<event>TODO</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You sit back and take a longer look at her as she sits up. You recognize her, but you can't tell from where. "Who are you?" you ask. "${User.firstName}, how do you not know who I am?"</event>
+<event>TODO</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
