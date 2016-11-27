@@ -15,23 +15,23 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>YouDontKeepTheKnife</event>
+<event>you die</event>
 <key>6</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>YouKeepTheKnife</event>
+<event>you die</event>
 <key>17</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>YouGiveHerYourJacket</event>
+<event>you die</event>
 <key>44</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>YouDontGiverHerYourJacket</event>
+<event>you die</event>
 <key>30</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 </scene>

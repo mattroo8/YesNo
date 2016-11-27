@@ -34,6 +34,7 @@
 		28B29C631DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */; };
 		28B29C651DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */; };
 		28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */; };
+		28B29C691DEAF03E001CB3D2 /* YouSaySomething.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */; };
 		28BB86B31C5416E4007EDF79 /* StoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BB86B21C5416E4007EDF79 /* StoryManager.m */; };
 		28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86B81C543692007EDF79 /* AdventureView.xib */; };
 		28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86BA1C5436E2007EDF79 /* CharacterSetupView.xib */; };
@@ -108,6 +109,7 @@
 		28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouGiveHerYourJacket.xml; sourceTree = "<group>"; };
 		28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontGiverHerYourJacket.xml; sourceTree = "<group>"; };
 		28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontSayAnything.xml; sourceTree = "<group>"; };
+		28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouSaySomething.xml; sourceTree = "<group>"; };
 		28BB86B11C5416E4007EDF79 /* StoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryManager.h; sourceTree = "<group>"; };
 		28BB86B21C5416E4007EDF79 /* StoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryManager.m; sourceTree = "<group>"; };
 		28BB86B81C543692007EDF79 /* AdventureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdventureView.xib; sourceTree = "<group>"; };
@@ -240,7 +242,9 @@
 			children = (
 				286E1EBD1C669BBA0052F410 /* youAreABiologyProfessor.xml */,
 				286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */,
+				28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */,
 				286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */,
+				28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */,
 				286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */,
 			);
 			name = Old;
@@ -255,7 +259,6 @@
 				28B29C601DE78035001CB3D2 /* YouKeepTheKnife.xml */,
 				28B29C621DE89FF1001CB3D2 /* YouGiveHerYourJacket.xml */,
 				28B29C641DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml */,
-				28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */,
 			);
 			name = StoryXML;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */,
 				28E7F6A31C67CFCC0011C587 /* Icon-60@3x.png in Resources */,
 				28B29C651DE9C818001CB3D2 /* YouDontGiverHerYourJacket.xml in Resources */,
+				28B29C691DEAF03E001CB3D2 /* YouSaySomething.xml in Resources */,
 				28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */,
 				28BB86BD1C543713007EDF79 /* MainMenuView.xib in Resources */,
 				286F13B51C6289B400D148EB /* arrowLeft.png in Resources */,

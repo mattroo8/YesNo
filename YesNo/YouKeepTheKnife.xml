@@ -15,23 +15,23 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>YouDontSayAnything</event>
+<event>You don't respond. The struggle continues. Another gunshot goes off. You feel a burning sensation in your belly. You have been shot.</event>
 <key>6</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>YouSaySomething</event>
+<event>You tell him that you dont know what he is talking about. He jumps off you with his gun pointing straight at your head. He pulls the trigger. He kills you.</event>
 <key>17</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>YouDontLeaveTheBody</event>
+<event>You go deeper into the woods.</event>
 <key>44</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>YouLeaveTheBody</event>
+<event>You stay there and try to figure out who he is.</event>
 <key>30</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 </scene>

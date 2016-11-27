@@ -13,7 +13,7 @@
 <event>You take a swig out of the bottle. It's Jameson. You take another swig. You start to feel your cheeks warm up. You sing every word of the song with her. She asks you if you can pull over to go to the toilet. Do you pull in?</event>
 <key>31</key>
 <isScene>no</isScene>
-<isEnding>yes</isEnding>
+<isEnding>no</isEnding>
 <!--Left child of the first events left child-->
 <event>You tell her its not right to drink and drive. Her mood changes instantly. "You never want to have fun with me." She takes another drink from the bottle. "I bet if it was that girl from your work, you would drink with her!" You say nothing. Your silence angers her even more. She lashes out at you, hitting you in the face and arm. You try to control her and as you do, the car hits a patch of black ice. You lose control of the car and veer into the wooded are of the the road. You are heading straight for a tree. That's the last you rememeber.</event>
 <key>6</key>

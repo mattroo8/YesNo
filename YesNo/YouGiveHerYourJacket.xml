@@ -5,33 +5,33 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You sit back and take a longer look at her as she sits up. You recognize her, but you can't tell from where.'</event>
+<event>You sit back and take a longer look at her as she sits up. You recognize her, but you can't tell from where. "Who are you?" you ask. "${User.firstName}, how do you not know who I am?"</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
-<event>You slowly walk over to the dark mound. As you get closer you realise that it is a person. You get down on your knees to get a closer look. It's a women wearing a green dress. She has long dark hair and a slender figure. There are no signs of injury. You rock her back and forth until she comes to. Her skin is covered in goosebumps and she is shivering. Do you give her your jacket?</event>
+<event>You help her up.</event>
 <key>31</key>
 <isScene>no</isScene>
-<isEnding>no</isEnding>
+<isEnding>yes</isEnding>
 <!--Left child of the first events left child-->
-<event>YouDontKeepTheKnife</event>
+<event>you die</event>
 <key>6</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>YouKeepTheKnife</event>
+<event>you die</event>
 <key>17</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>YouGiveHerYourJacket</event>
+<event>you die</event>
 <key>44</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>YouDontGiverHerYourJacket</event>
+<event>you die</event>
 <key>30</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 </scene>

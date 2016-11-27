@@ -1,11 +1,11 @@
 <scene name="YouDontKeepTheKnife" >
 <!--First event-->
-<event>You dont think there is any use for the Knife. You keep rumaging through the bag and find a flash light. You switch it on and drop the bag to the ground. You survey the area using the flash light. You are deep in the woods. You shine the light on the dark mound you noticed earlier. The light illuminates a green dress and long blonde hair. You walk over to the body. The dress is stained in blood. There is a deep gash on her forehead. She doesnt seem to breathing. Do you check her pulse?</event>
+<event>You dont think there is any use for the Knife. You keep rumaging through the bag and find a flash light. You switch it on and drop the bag to the ground. You survey the area using the flash light. You are deep in the woods. You shine the light on the dark mound you noticed earlier. The light illuminates a green dress and long blonde hair. You walk over to the body. The dress is stained in blood. There is a deep gash on her forehead. She doesnt seem to be breathing. Do you check her pulse?</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You step away from the body and as you walk you trip and stumble over the root of a tree. You're leg is hurt and you find it hard to get back up. The cold is setting in and you can feel your body trembling uncontrollably. As you lay there you wonder how you get here, who that women is and how she was hurt. Her green dress looks familiar. You like the colour of the dress. She is an attractive women. The more you look at her, the more the emotional connection grows in you. You love her. You drag yourself towards her, through the mud and the dirt. Your core temperature is lowering dramatically. As you pull yourself up beside her you hug her and smell her hair. Do you say something to her?</event>
+<event>You step away from the body and as you walk you trip and stumble over the root of a tree. You're leg is hurt and you find it hard to get back up. The cold is setting in and you can feel your body trembling uncontrollably. As you lay there, you wonder how you get here, who that women is and how she was hurt. Her green dress looks familiar. You like the colour of the dress. She is an attractive women. The more you look at her, the more the emotional connection grows in you. You love her. You drag yourself towards her, through the mud and the dirt. Your core temperature is lowering dramatically. As you pull yourself up beside her you hug her and smell her hair. Do you say something to her?</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
@@ -15,23 +15,23 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>YouDontSayAnything</event>
+<event>You say nothing. The cold sets in and your eyes grow heavy. The darkness grows and grows.</event>
 <key>6</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>YouSaySomething</event>
+<event>You tell her you are sorry for what happened. The cold sets in and your eyes grow heavy. The darkness grows and grows.</event>
 <key>17</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>YouDontLeaveTheBody</event>
+<event>You run from the body and go deeper into the woods. You eventually grow tired of running. You collapse on the cold wet ground. Your eyes close and you drift off into the darkness.</event>
 <key>44</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>YouLeaveTheBody</event>
+<event>You search around her looking for any clues which might help you figure out what has happenend. You see a purse amongst the leaves close by. You open it. Inside there is a picture of you and the women. You are convinced you must have killed her. You walk deeper into the woods. Never to be seen again.</event>
 <key>30</key>
-<isScene>yes</isScene>
-<isEnding>no</isEnding>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
 </scene>
