@@ -41,7 +41,6 @@
 
 - (IBAction)goToMainMenu:(id)sender
 {
-    [_storyManager saveState];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
@@ -80,7 +79,10 @@
     [textView resignFirstResponder];
 }
 
-
-
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [_storyManager saveState];
+}
 
 @end

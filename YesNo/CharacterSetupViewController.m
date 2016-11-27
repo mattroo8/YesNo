@@ -72,7 +72,7 @@
     mainCharacter.lastName = _lastNameTextField.text;
     mainCharacter.age = _ageTextField.text;
     mainCharacter.sex = [_sexSegmentedControl titleForSegmentAtIndex:_sexSegmentedControl.selectedSegmentIndex];
-    mainCharacter.currentStory = @"morningscene";
+    mainCharacter.currentStory = @"intro";
     mainCharacter.eventHistory = [NSMutableArray new];
     mainCharacter.currentEvent = nil;
     mainCharacter.currentEventIndex = 0;
