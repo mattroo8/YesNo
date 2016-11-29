@@ -1,6 +1,6 @@
 <scene name="YouDontFight" >
 <!--First event-->
-<event>You make a run for it. The walker can run at an incredible speed and easily catches up to you. It jumps on your back and sinks its teeth into your neck. You have been infected by the virus and have become a walker.</event>
+<event>You make a run for it with the rest of the group. </event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

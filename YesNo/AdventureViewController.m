@@ -16,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _storyManager = [[StoryManager alloc]init];
-    _storyManager.delegate = self;
-    [_storyManager setupStory];
+    if(!_isInAboutMode){
+        _storyManager = [[StoryManager alloc]init];
+        _storyManager.delegate = self;
+        [_storyManager setupStory];
+    } else {
+        [self showYesButtonForStoryView:NO andNoButton:NO andBackButton:NO andForwardButton:NO];
+        _textView.text = @"The objective of this game is to try to stay alive. There is only one sequence of decisions which will keep you alive. Good luck.";
+    }
     [_textView setEditable:NO];
 }
 
@@ -82,7 +87,9 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [_storyManager saveState];
+    if(!_isInAboutMode){
+        [_storyManager saveState];
+    }
 }
 
 @end

@@ -1,36 +1,36 @@
 <scene name="YouDontHelp" >
 <!--First event-->
-<event>You dont think there is any use for the Knife. You keep rumaging through the bag and find a flash light. You switch it on and drop the bag to the ground. You survey the area using the flash light. You are deep in the woods. You shine the light on the dark mound you noticed earlier. The light illuminates a green dress and long blonde hair. You walk over to the body. The dress is stained in blood. There is a deep gash on her forehead. She doesnt seem to be breathing. Do you check her pulse?</event>
+<event>You leave Ben and run up the hall with the rest of the group. You turn the corner and end up in a large room which looks like the canteen of the barracks. You can hear Marie sobbing behind you. "We shouldn't have left him." "He sacrificed himself to save us" John replied. "He didn't want to die" said Marie. You walk down through the canteen and come to a door. It looks like the door to the kitchen. "We shouldn't go in there." said Marie. "There could be more in there" "Ya well they could come after us when they finish with Ben!" John snapped. Marie began to cry again. Do you open the door?</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You step away from the body and as you walk you trip and stumble over the root of a tree. You're leg is hurt and you find it hard to get back up. The cold is setting in and you can feel your body trembling uncontrollably. As you lay there, you wonder how you get here, who that women is and how she was hurt. Her green dress looks familiar. You like the colour of the dress. She is an attractive women. The more you look at her, the more the emotional connection grows in you. You love her. You drag yourself towards her, through the mud and the dirt. Your core temperature is lowering dramatically. As you pull yourself up beside her you hug her and smell her hair. Do you say something to her?</event>
+<event>You agree with Marie. It's too risky and after all you are after weapons not food. You instead retrace your steps back through the canteen. As you walk past one of the tables, Marie's bag hits off of a cup which knocks it to the floor. The handle on the kitchen door starts to turn. Do you stick around to see what it is?</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
-<event>You grab her wrist and press your fingers against her veins. You feel nothing. She's dead. Thoughts of how she died run through your mind. Did you kill her? You step back away from the body. Your stomach starts to turn at the possibility of you being a murderer. Do you leave the body?</event>
+<event>You slowly open the door. It creaks as it opens. The lights are off and its hard to see anything. The three of you move into the kitchen. There are bodies on the floor which you are careful to step over. Suddenly John lets out a scream. You turn to see Johns ankle held by a walker. He screams for help. Do you help him?</event>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>You say nothing. The cold sets in and your eyes grow heavy. The darkness grows and grows.</event>
+<event>You decide not to and instead you run to the door with the rest of the group. You come to a stairs and run up. You can hear the loud and heavy steps of the walkers behind you. The walkers pounce and kill each of you before you make it to the top.</event>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>You tell her you are sorry for what happened. The cold sets in and your eyes grow heavy. The darkness grows and grows.</event>
+<event>You wait with baited breath to see what comes out from behind the door. Three walkers emerge from the room and start to run straight for you. You try to fight them but you and the others die in a gruesome death.</event>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events right child-->
-<event>You run from the body and go deeper into the woods. You eventually grow tired of running. You collapse on the cold wet ground. Your eyes close and you drift off into the darkness.</event>
+<event>You run over to John and begin to kick and stomp the walker. Another grabs you from behind and digs his teeth into your back. You can't move. The darkness drowns your sight. You were killed.</event>
 <key>44</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>You search around her looking for any clues which might help you figure out what has happenend. You see a purse amongst the leaves close by. You open it. Inside there is a picture of you and the women. You are convinced you must have killed her. You walk deeper into the woods. Never to be seen again.</event>
+<event>You turn and run with Marie out the door at the end of the kitchen. It leads you outside. You continue to run as fast as you can but its no use. More walkers chase you and you can not out run them. They catch up to you and Marie and kill you both.</event>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

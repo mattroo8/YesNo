@@ -79,7 +79,7 @@
     
     [_usm saveCharacter:mainCharacter];
     AdventureViewController *advc = [AdventureViewController new];
-    advc.presentedFromCharacterSetup = YES;
+    advc.isInAboutMode = NO;
     [self.navigationController pushViewController:advc animated:YES];
 }
 - (IBAction)backPressed:(id)sender {

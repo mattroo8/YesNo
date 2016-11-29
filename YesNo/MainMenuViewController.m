@@ -46,7 +46,12 @@
 - (IBAction)mainMenuContinueStoryButtonPressed:(id)sender {
     
     AdventureViewController *advc = [AdventureViewController new];
-    advc.presentedFromCharacterSetup = NO;
+    advc.isInAboutMode = NO;
+    [self.navigationController pushViewController:advc animated:YES];
+}
+- (IBAction)aboutButtonPressed:(id)sender {
+    AdventureViewController *advc = [AdventureViewController new];
+    advc.isInAboutMode = YES;
     [self.navigationController pushViewController:advc animated:YES];
 }
 

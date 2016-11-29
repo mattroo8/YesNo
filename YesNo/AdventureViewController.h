@@ -23,7 +23,6 @@
 @property (strong, nonatomic) StoryManager *storyManager;
 @property (strong, nonatomic) Character *mainCharacter;
 @property (strong, nonatomic) UserStateManager *userStateManager;
-
-@property BOOL presentedFromCharacterSetup;
+@property BOOL isInAboutMode;
 
 @end
