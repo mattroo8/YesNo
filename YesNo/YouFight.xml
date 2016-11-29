@@ -1,37 +1,37 @@
 <scene name="YouFight" >
-<!--First event-->
-<event>TODO</event>
-<key>26</key>
-<isScene>no</isScene>
-<isEnding>no</isEnding>
-<!--Left child of the first event-->
-<event>TODO</event>
-<key>11</key>
-<isScene>no</isScene>
-<isEnding>no</isEnding>
-<!--Right child of the first event-->
-<event>You help her up.</event>
-<key>31</key>
-<isScene>no</isScene>
-<isEnding>yes</isEnding>
-<!--Left child of the first events left child-->
-<event>you die</event>
-<key>6</key>
-<isScene>no</isScene>
-<isEnding>yes</isEnding>
-<!--Right child of the first events left child-->
-<event>you die</event>
-<key>17</key>
-<isScene>no</isScene>
-<isEnding>yes</isEnding>
-<!--Right child of the first events right child-->
-<event>you die</event>
-<key>44</key>
-<isScene>no</isScene>
-<isEnding>yes</isEnding>
-<!--Left child of the first events right child-->
-<event>you die</event>
-<key>30</key>
-<isScene>no</isScene>
-<isEnding>yes</isEnding>
+    <!--First event-->
+    <event>You swing for its head and connect perfectly with its face, knocking it back to the floor. Ben follows up with a kick to the head, killing the walker. You each take a minute to get your breath back and let the adrenaline drop. "Great shot!" Ben says. You walk past the body of the walker and with the group, turn right at the end of the hallway. You open a door which brings you in to what looks like a canteen. You venture in, its dark and silent. Dishes and cutlery are sprayed across the floor. You try to avoid making any noise. You come across a body on the ground. Do you inspect it? </event>
+    <key>26</key>
+    <isScene>no</isScene>
+    <isEnding>no</isEnding>
+    <!--Left child of the first event-->
+    <event>You leave the body incase it could be a walker. You keep moving through the canteen. You then see an exit on the left. Do you take the exit?</event>
+    <key>11</key>
+    <isScene>no</isScene>
+    <isEnding>no</isEnding>
+    <!--Right child of the first event-->
+    <event>You hunker down and inspect the body. He looks to be a senior member of the army. His uniform is covered in blood. You rummage through his pockets and find a set of keys. You stash them in your pocket and pull his weapon from his holster. You stand back up and show the keys to the rest of the group. "They might come in handy" says John. You continue to the end of the canteen and see and exit door. You slowly open the door, hoping there are no walkers on the other side. The door leads you outside. You are now in the back yard of the barracks. It's cold and your breath fills the air like white smoke. You see an army truck up parked up. Do you check it out?</event>
+    <key>31</key>
+    <isScene>no</isScene>
+    <isEnding>no</isEnding>
+    <!--Left child of the first events left child-->
+    <event>You decide not to take the exit but instead take a seat at one of tables. "I think we should keep moving!" says Ben anxiously. "We can't wait around too long!" You sit there patiently. John takes a seat beside you. "It's OK, I know you are scared bu...." Just as John was about to finish his sentence. The door of the canteen opens. There is a an outline of a man dressed in army clothing. He is holding a large machine gun. He speaks into his walkie talkie "We've found them" He walks into the canteen and is followed by four more soldiers. They open fire on you. They leave no survivors.</event>
+    <key>6</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Right child of the first events left child-->
+    <event>You tell the rest of the group to follow you out the exit. You enter into the cold air of outside. Awaiting you are 20 walkers which instantly pounce on your group killing everyone.</event>
+    <key>17</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Right child of the first events right child-->
+    <event>You sneak over to the truck and peep under the canvas covering the back. The back is filled with boxes. You signal to the rest of the group to help you look through the boxes. You open the first box. It's food rations. You look in the next box...its the same. The truck is filled with food rations. You hear a screech from outside of the Jeep. You look at the rest of the group. You all know this is the end. You see a hand poke through the canvas. Then a head. Its a walker. It pulls down the canvas to reveal 20 more. They jump into the van and kill everyone.</event>
+    <key>44</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Left child of the first events right child-->
+    <event>You don't think the truck is safe to check out. You keep against the walls of the barracks and make your way over to a large building the other side of the yard. There are two large sliding doors which you try to pull open. They are too heavy to move. You ask for help from the rest of the guys. You are able to open it just enough that you can squeeze in. You turn on the light. The room is full of weapons and ammunition. You pick up the as much as you can and exit the building. Waiting outside are hundreds of walkers. You mow them down with your newly acquired weapons and leave the barracks having survived the mission.</event>
+    <key>30</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
 </scene>

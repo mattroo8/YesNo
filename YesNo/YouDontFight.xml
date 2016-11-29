@@ -1,9 +1,9 @@
 <scene name="YouDontFight" >
 <!--First event-->
-<event>TODO</event>
+<event>You make a run for it. The walker can run at an incredible speed and easily catches up to you. It jumps on your back and sinks its teeth into your neck. You have been infected by the virus and have become a walker.</event>
 <key>26</key>
 <isScene>no</isScene>
-<isEnding>no</isEnding>
+<isEnding>yes</isEnding>
 <!--Left child of the first event-->
 <event>TODO</event>
 <key>11</key>
