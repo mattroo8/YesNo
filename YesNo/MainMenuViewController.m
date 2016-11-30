@@ -38,9 +38,20 @@
 
 - (IBAction)maineMenuNewStoryButtonPressed:(id)sender {
     
-    CharacterSetupViewController *csvc = [CharacterSetupViewController new];
-    csvc.delegate = self;
-    [self.navigationController pushViewController:csvc animated:YES];
+    Character *mainCharacter = [Character new];
+    mainCharacter.firstName = @"firstName";
+    mainCharacter.lastName = @"lastName";
+    mainCharacter.age = @"age";
+    mainCharacter.sex = @"sex";
+    mainCharacter.currentStory = @"intro";
+    mainCharacter.eventHistory = [NSMutableArray new];
+    mainCharacter.currentEvent = nil;
+    mainCharacter.currentEventIndex = 0;
+    
+    [[UserStateManager sharedUserStateManager] saveCharacter:mainCharacter];
+    AdventureViewController *advc = [AdventureViewController new];
+    advc.isInAboutMode = NO;
+    [self.navigationController pushViewController:advc animated:YES];
 }
 
 - (IBAction)mainMenuContinueStoryButtonPressed:(id)sender {
