@@ -17,6 +17,6 @@
 -(void)insertNodeWithEvent:(Event *)event;
 -(Event *)getNextEventForChoice:(DecisionEnum)choice;
 -(void)setLeafNodes;
--(Event *)searchNodeForKey:(int)key;
+-(void)setCurrentNodeForKey:(int)key;
 
 @end

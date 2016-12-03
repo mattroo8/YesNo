@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if(!_isInAboutMode){
-        _storyManager = [[StoryManager alloc]init];
+        _storyManager = [[StoryManager alloc] init];
         _storyManager.delegate = self;
         [_storyManager setupStory];
     } else {

@@ -33,6 +33,7 @@
     _currentEvent.decision = decision;
     Event *event = [_storyTree getNextEventForChoice:decision];
     if(event.isScene){
+        _mainCharacter.currentStory = event.eventText;
         [self parseNewScene:event.eventText];
     } else if(event.isEnding){
         _currentEvent = event;
@@ -69,6 +70,7 @@
         }
     } else {
         _currentEvent = _mainCharacter.currentEvent;
+        [_storyTree setCurrentNodeForKey:_currentEvent.key];
     }
     [_delegate setTextForStoryView:_currentEvent.eventText];
     [self updateStoryViewButtons];

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
             <connections>
+                <outlet property="aboutButtonTopToNSBottom" destination="ORY-uP-woP" id="NS8-NT-7Rn"/>
                 <outlet property="continueStoryButton" destination="abm-wZ-Aoq" id="Qc8-RO-bkn"/>
                 <outlet property="view" destination="iN0-l3-epB" id="CR5-kJ-4mR"/>
             </connections>
@@ -59,7 +60,7 @@
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Uel-9R-6N9" firstAttribute="top" secondItem="abm-wZ-Aoq" secondAttribute="bottom" constant="29" id="9v8-pk-Rko"/>
+                <constraint firstItem="Uel-9R-6N9" firstAttribute="top" secondItem="2cl-m3-RXD" secondAttribute="bottom" constant="90" id="ORY-uP-woP"/>
                 <constraint firstItem="abm-wZ-Aoq" firstAttribute="trailing" secondItem="2cl-m3-RXD" secondAttribute="trailing" id="TbA-q4-nUE"/>
                 <constraint firstItem="abm-wZ-Aoq" firstAttribute="leading" secondItem="2cl-m3-RXD" secondAttribute="leading" id="Vhz-nR-NSS"/>
                 <constraint firstItem="abm-wZ-Aoq" firstAttribute="top" secondItem="2cl-m3-RXD" secondAttribute="bottom" constant="31" id="WRv-qQ-TCj"/>

@@ -96,10 +96,9 @@
     }
 }
 
--(Event *)searchNodeForKey:(int)key
+-(void)setCurrentNodeForKey:(int)key
 {
-    TreeNode *node = [self searchNodeForKey:key andNode:_root];
-    return node.event;
+    _currentNode = [self searchNodeForKey:key andNode:_root];
 }
 
 -(TreeNode *)searchNodeForKey:(int)key andNode:(TreeNode *)node

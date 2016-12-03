@@ -13,6 +13,7 @@
 
 @interface MainMenuViewController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *aboutButtonTopToNSBottom;
 
 @end
 
@@ -26,8 +27,10 @@
 {
     if([[UserStateManager sharedUserStateManager]loadCharacter]){
         _continueStoryButton.hidden = NO;
+        _aboutButtonTopToNSBottom.constant = 90;
     } else {
         _continueStoryButton.hidden = YES;
+        _aboutButtonTopToNSBottom.constant = 45;
     }
 }
 
