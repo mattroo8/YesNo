@@ -10,17 +10,17 @@
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
-<event>You slowly open the door. It creaks as it opens. The lights are off and its hard to see anything. The three of you move into the kitchen. There are bodies on the floor which you are careful to step over. Suddenly John lets out a scream. You turn to see Johns ankle held by a walker. He screams for help. Do you help him?</event>
+<event>You slowly open the door. It creaks as it opens. The lights are off and its hard to see anything. The three of you move into the kitchen. There are bodies on the floor which you are careful not to step on them    . Suddenly John lets out a scream. You turn to see Johns ankle held by a walker. He screams for help. Do you help him?</event>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first events left child-->
-<event>You decide not to and instead you run to the door with the rest of the group. You come to a stairs and run up. You can hear the loud and heavy steps of the walkers behind you. The walkers pounce and kill each of you before you make it to the top.</event>
+<event>You decide not to and instead you run back through the door you came in. You come to a stairs and make your way up as fast as you can. You can hear the loud and heavy steps of the walkers behind you. They are getting closer. Marie the slowest gets taken out first. Then John followed by Ben. You reach the top of the stairs where you see a large exit door which looks like it could lead out to the roof. You run for the door and try to open it. Its locked. You turn to see 20 walkers coming straight for you. They rip you to shreds.</event>
 <key>6</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>You wait with baited breath to see what comes out from behind the door. Three walkers emerge from the room and start to run straight for you. You try to fight them but you and the others die in a gruesome death.</event>
+<event>You wait with bated breath to see what comes out from behind the door. The door whips open and to your horror you see three walkers emerge from the room. They let out a screech which echoes throughout the building. They break into a sprint, running straight for you. You valiantly try to fight them but you and the others are no match for the walkers. You die in a gruesome death along with the others.</event>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>

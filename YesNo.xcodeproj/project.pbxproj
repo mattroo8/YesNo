@@ -409,6 +409,8 @@
 					};
 					287623BF1C41A0880017E74C = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 7H3JB6GXN5;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 2876239B1C41A0880017E74C;
 					};
 				};
@@ -675,6 +677,8 @@
 		287623D01C41A0880017E74C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7H3JB6GXN5;
 				INFOPLIST_FILE = YesNoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthew.YesNoUITests;
@@ -687,6 +691,8 @@
 		287623D11C41A0880017E74C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7H3JB6GXN5;
 				INFOPLIST_FILE = YesNoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthew.YesNoUITests;

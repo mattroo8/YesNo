@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdventureViewController">
@@ -17,56 +21,57 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kal-Rh-Abs">
-                    <rect key="frame" x="56" y="58" width="301" height="531"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kal-Rh-Abs">
+                    <rect key="frame" x="56" y="58" width="262" height="462"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <mutableString key="text">You leave Ben and run up the hall with the rest of the group. You turn the corner and end up in a large room which looks like the canteen of the barracks. You can hear Marie sobbing behind you. "We shouldn't have left him." "He sacrificed himself to save us" John replied. "He didn't want to die" said Marie. You walk down through the canteen and come to a door. It looks like the door to the kitchen. "We shouldn't go in there." said Marie. "There could be more in there" "Ya well they could come after us when they finish with Ben!" John snapped. Marie began to cry again. Do you open the door?</mutableString>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
                 </textView>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJz-zJ-OQP">
-                    <rect key="frame" x="30" y="620" width="78" height="60"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="30" y="551" width="78" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="78" id="Gqm-S1-5Ua"/>
                         <constraint firstAttribute="height" constant="60" id="cHX-eD-O2M"/>
                     </constraints>
                     <state key="normal" title="Yes">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="choicePressed:" destination="-1" eventType="touchUpInside" id="tDc-rD-gp2"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1P-0x-o2R">
-                    <rect key="frame" x="310" y="620" width="78" height="60"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="271" y="551" width="78" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="MOv-HE-XO1"/>
                         <constraint firstAttribute="width" constant="78" id="cXx-cf-Wm2"/>
                     </constraints>
                     <state key="normal" title="No">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="choicePressed:" destination="-1" eventType="touchUpInside" id="GMm-nN-KFZ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPX-GZ-0kB">
-                    <rect key="frame" x="169" y="687" width="76" height="30"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="149.5" y="618" width="76" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Main Menu">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="goToMainMenu:" destination="-1" eventType="touchUpInside" id="yXm-wi-gbd"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-td-vgg">
-                    <rect key="frame" x="169" y="632" width="36" height="47"/>
+                    <rect key="frame" x="149.5" y="563" width="36" height="47"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="36" id="OIC-lq-1dI"/>
                         <constraint firstAttribute="height" constant="47" id="ang-Sa-5e5"/>
@@ -77,7 +82,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsy-Rh-FJO">
-                    <rect key="frame" x="209" y="632" width="36" height="47"/>
+                    <rect key="frame" x="189.5" y="563" width="36" height="47"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="47" id="3e3-1z-2PN"/>
                         <constraint firstAttribute="width" constant="36" id="BjP-Eg-NVx"/>
@@ -88,7 +93,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="nsy-Rh-FJO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="20" id="28S-RW-YBJ"/>
                 <constraint firstItem="oJz-zJ-OQP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="9Q0-dU-EUD"/>
@@ -107,7 +112,6 @@
                 <constraint firstItem="TDK-td-vgg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-20" id="qJV-Bx-b1d"/>
                 <constraint firstItem="kal-Rh-Abs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="56" id="tg1-WB-iWk"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
     </objects>
     <resources>

@@ -1,16 +1,16 @@
 <scene name="YouHelpHim" >
 <!--First event-->
-<event>You grab a broom which is laying against the wall and smash it against one of the walkers heads. He collapses to the floor. The other two turn and try to attack you. A loud gunshot sounds off. John has shot one of the walkers in the head. The other jumps on John and digs his teeth into his neck. A second gunshot rings through the air. John shot the walker and it falls to the ground. Blood streams from Johns neck. There is silence again. Ben climbs to his feet. He takes a look at John's neck. "He...He's been bitten" It won't take long for the virus to spread into John turning him into a walker. "Please...please don't" John whimpers. You take the gun from his hand and point it at his head. Do you kill him?</event>
+<event>You pick up a metal bar which was laying against the wall and smash it against one of the walkers heads. He collapses to the floor. The other two turn and try to attack you. A loud gunshot sounds off. John has shot one of the walkers in the head. The other jumps on John and digs his teeth into his neck. A second gunshot rings through the air. John shot the walker and it falls to the ground. Blood streams from Johns neck. There is silence again. Ben climbs to his feet. He takes a look at John's neck. "He...He's been bitten" It won't take long for the virus to spread into John turning him into a walker. "Please...please don't" John whimpers. You take the gun from his hand and point it at his head. Do you kill him?</event>
 <key>26</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Left child of the first event-->
-<event>You lower the weapon and help John to his feet. You walk up the hallway and turn right. You come to a stairs and begin to ascend the steps. The group follow closely behind you. You make it to the top of the stairs which brings you to a dormitory. Beds are lined up either side of the room. Bodies lay all over the floor. A loud scream fills the room. You turn to see Marie held by John is sniffing her neck. "Don't do it John!" Ben yells. "I can't help myself....shoot me!" You pull out the weapon and aim it at John. Your hand is trembling. Do you take the shot?</event>
+<event>You lower the weapon and help John to his feet. You walk up the hallway and turn right. You come to a stairs and begin to ascend the steps. The group follow closely behind you. You make it to the top of the stairs which brings you to a dormitory. Beds are lined up either side of the room. Bodies lay all over the floor. Suddenly, a loud scream fills the room. You turn to see Marie held by John who is sniffing her neck. "Don't do it John!" Ben yells. "I can't help myself....shoot me!" You pull out the weapon and aim it at John. Your hand is trembling. Do you take the shot?</event>
 <key>11</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
 <!--Right child of the first event-->
-<event>You pull the trigger and a bullet goes right through his head. Marie lets out a scream. "You did the right thing. He would have killed all of us" You turn to Marie and put your hand on her shoulder. You see a stairs which looks like it leads down to the basement. Do you go down to the basement?</event>
+<event>You pull the trigger and a bullet goes right through his head. Marie lets out a scream. "You did the right thing. He would have killed all of us" said Ben. You turn to Marie and put your hand on her shoulder. You see a stairs which looks like it leads down to a basement. Do you go down the stairs?</event>
 <key>31</key>
 <isScene>no</isScene>
 <isEnding>no</isEnding>
@@ -20,7 +20,7 @@
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Right child of the first events left child-->
-<event>You fire a shot which grazes Johns ear. He digs his teeth into her neck and clamps down hard. Blood pours from her neck. The for to the dormitory bursts open. Four walkers enter the room. You shoot one of them and then attempt to fire at the others. You are out of bullets. John drops Maries body and races towards you. He pounces on you with the rest of the walkers. You are done for.</event>
+<event>You fire a shot which grazes Johns ear. He digs his teeth into her neck and clamps down hard. Blood pours from her neck. The door to the dormitory bursts open. Four walkers enter the room. You shoot one of them and then attempt to fire at the others. You are out of bullets. John drops Maries body and races towards you. He pounces on you with the rest of the walkers. You are done for.</event>
 <key>17</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
@@ -30,7 +30,7 @@
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
 <!--Left child of the first events right child-->
-<event>You decide not to go down to the basement but check Johns body for anything more useful. He might be carrying more weapons. Just as you hunker down to check him. The front door bursts open and a stream of walkers run through. You try to run but they pounce on you and kill each of you.</event>
+<event>You decide not to take the stairs but check Johns body any weapons he might be carrying. Just as you hunker down to check him. The front door of the barracks bursts open and a stream of walkers run through. You make a run for it but they are too fast. They kill each of you.</event>
 <key>30</key>
 <isScene>no</isScene>
 <isEnding>yes</isEnding>
