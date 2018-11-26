@@ -1,0 +1,37 @@
+<scene name="YouDontSayAnything" >
+<!--First event-->
+<event>You lay there in silence with her. The cold sets even more now. Your eyes lids feel heavy and begin to close. Your driving through the night. Your two hands grip the wheel. You are relaxed and carefree. She is sitting in the passenger seat singing along to the radio. You sing the chorus with her "Driving home for christmas". She hands you bottle of whiskey. With your left hand you take the bottle. Do you take a drink?</event>
+<key>26</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Left child of the first event-->
+<event>You hand her back the bottle. You tell her you shouldn't. Its too dangerous. She laughs. "You are so uptight. Its just one drink!". She takes a drink and hands back the bottle to you. Do you give in?</event>
+<key>11</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Right child of the first event-->
+<event>You take a swig out of the bottle. It's Jameson. You take another swig. You start to feel your cheeks warm up. You sing every word of the song with her. She asks you if you can pull over to go to the toilet. Do you pull in?</event>
+<key>31</key>
+<isScene>no</isScene>
+<isEnding>no</isEnding>
+<!--Left child of the first events left child-->
+<event>You tell her its not right to drink and drive. Her mood changes instantly. "You never want to have fun with me." She takes another drink from the bottle. "I bet if it was that girl from your work, you would drink with her!" You say nothing. Your silence angers her even more. She lashes out at you, hitting you in the face and arm. You try to control her and as you do, the car hits a patch of black ice. You lose control of the car and veer into the wooded are of the the road. You are heading straight for a tree. That's the last you rememeber.</event>
+<key>6</key>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
+<!--Right child of the first events left child-->
+<event>You give in and take a swig from the bottle. The whiskey burns your throat. You feel it go down your throat. It warms your whole body. You pass the bottle back to her. You look back at the road and the last thing you see is a deer on the road. You swerve to avoid the deer but instead drive full speed into a tree killing you and your passenger.</event>
+<key>17</key>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
+<!--Right child of the first events right child-->
+<event>You slow down and pull in on the side of the road. She gets out and of the car and runs into the woods. You chase after her into the darkness.</event>
+<key>44</key>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
+<!--Left child of the first events right child-->
+<event>You tell her there is nowhere safe to pull in. You tell her its better to wait until you pass a gas station. She leans in to give you a kiss. You take your eyes of the road. Thats the last thing you remember.</event>
+<key>30</key>
+<isScene>no</isScene>
+<isEnding>yes</isEnding>
+</scene>

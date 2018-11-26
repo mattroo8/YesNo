@@ -1,0 +1,37 @@
+<scene name="YouDontFight" >
+    <!--First event-->
+    <event>You make a run for it with the rest of the group. You run into a room and shut the door behind you. You jam your shoulder against the door to prevent the walker from opening it. Ben and John pull up desks and chairs to place in front of the door to keep it closed. It continues to bash the door with all of its body weight. You tell the guys to hurry as you are struggling to keep it out. Ben pulls a large container full of books in front of the door which seems to be holding it. You step back and watch the furniture in front of the door rattle with every strike the walker throws at the door. "We are stuck here!" Marie cries. You take a look around the room. Its now just an empty room with all of the furniture placed in front of the door. "So what the hell do we do now?" shouts Ben. You walk over to the window. You're one story up. Do you try to escape out the window?</event>
+    <key>26</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Left child of the first event-->
+    <event>You turn around to the group and the expression on your face makes it obvious to them that you are all done for. "Do these things ever tire?" asks John. "I don't think so" Ben replies "I hear they don't need food, water..sleep....They are not human anymore!" The banging on the door continues. "What the hell happened to them?" asks Marie. "They got infected...by that virus..." says John. "The army created a drug with some pharmaceutical company to make their soldiers unstoppable. They wanted them to not feel pain...but what they got was an outbreak of monsters! The virus is icredibly contagious if their blood comes incontact with you...well...you become one of them!" Marie begins to sob and then all of a sudden the banging on the door stops. You give a look to the rest of the group. You wonder if the walker could have left. Do you check to see if its gone?</event>
+    <key>11</key>
+    <isScene>no</isScene>
+    <isEnding>no</isEnding>
+    <!--Right child of the first event-->
+    <event>You open the window. The cold air enters the room. You look down. It doesn't look too far. There is a drain pipe leading all the way to the ground. It looks like a good way to get down. You turn to the rest and let them know this is the only way out. Marie starts to shake her head. "I'm not climbing down there. I can't do it." "You have to Marie!" John snaps back. "We are going to die in here. It's eventually going to break in!" Do you leave Marie behind?</event>
+    <key>31</key>
+    <isScene>no</isScene>
+    <isEnding>no</isEnding>
+    <!--Left child of the first events left child-->
+    <event>You sit back and wait to see if the walker has left. There is an eerie silence. You're concentrating hard to try and hear anything you can from outside. There is no sound. "I think it's gon..." Just as John is about to finish his sentence. The banging continues on the door again. This time it's louder than ever. The sound of 20 walkers thrashing at the door comes from the other side. "It brought more of them!" cries John. A walker's arm penetrates the door. It breaks through creating a gap for the rest of them to get through. You realise there is no way out. You run for the window and jump out. You fall to your death.</event>
+    <key>6</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Right child of the first events left child-->
+    <event>You walk up to the door. You hear nothing. It must have left. You move some of the furniture away from the door. You slowly open it and look outside. The coast looks clear. You step into the hallway. You turn to signal the rest of the group until you feel a drop from the ceiling fall on your head. You feel your head with your hand and take a look at the liquid. It's blood. You look up and the last thing you see is a walker hanging from the ceiling. It drops on you and kills you.</event>
+    <key>17</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Right child of the first events right child-->
+    <event>You climb out the window and grab the drain pipe. You can hear Marie crying from inside. The banging begins again, you hear the walkers screech. A loud bang echoes from the window. The walkers have broken through. You hear Marie scream. You climb down the drain pipe but it's too late the walkers have climbed out the window and jump on you pulling you from the drain pipe to the ground where you hit your head and instantly die.</event>
+    <key>44</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+    <!--Left child of the first events right child-->
+    <event>You try to convince Marie to climb down the drain pipe with you. She can't be convinced. You grab her by the wrist and drag her towards the window. You lift her leg and push it out onto the window ledge. Just as her foot hits the concrete ledge the furniture in front of the door comes crashing down. The walker has broken through. You try to fight the walker off and let Marie escape but it hits you across the head knocking you out cold. You never wake up.</event>
+    <key>30</key>
+    <isScene>no</isScene>
+    <isEnding>yes</isEnding>
+</scene>

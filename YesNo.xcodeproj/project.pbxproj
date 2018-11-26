@@ -9,14 +9,9 @@
 /* Begin PBXBuildFile section */
 		2817E48F1C445D2400BF046F /* CharacterSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817E48E1C445D2400BF046F /* CharacterSetupViewController.m */; };
 		285A1E8B1C4B069D0079F4C7 /* SceneParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 285A1E8A1C4B069D0079F4C7 /* SceneParser.m */; };
-		285A1E8D1C4B0A9D0079F4C7 /* YouDontHelp.xml in Resources */ = {isa = PBXBuildFile; fileRef = 285A1E8C1C4B0A9D0079F4C7 /* YouDontHelp.xml */; };
 		285AB3741C45B201005609B2 /* UserStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3731C45B201005609B2 /* UserStateManager.m */; };
 		285AB3771C4693C0005609B2 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3761C4693C0005609B2 /* TreeNode.m */; };
 		285AB37A1C46941D005609B2 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AB3791C46941D005609B2 /* Tree.m */; };
-		286E1EC11C669BBA0052F410 /* youAreABiologyProfessor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EBD1C669BBA0052F410 /* youAreABiologyProfessor.xml */; };
-		286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */; };
-		286E1EC31C669BBA0052F410 /* youAreNotABiologyProfessor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */; };
-		286E1EC41C669BBA0052F410 /* youAreNotAnAthlete.xml in Resources */ = {isa = PBXBuildFile; fileRef = 286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */; };
 		286F13B41C6289B400D148EB /* arrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 286F13B21C6289B400D148EB /* arrowRight.png */; };
 		286F13B51C6289B400D148EB /* arrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 286F13B31C6289B400D148EB /* arrowLeft.png */; };
 		287623A11C41A0880017E74C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623A01C41A0880017E74C /* main.m */; };
@@ -30,20 +25,20 @@
 		287623E11C430DFB0017E74C /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 287623E01C430DFB0017E74C /* Scene.m */; };
 		289710DD1C503663002219D4 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 289710DC1C503663002219D4 /* Event.m */; };
 		28B29C5F1DE77A13001CB3D2 /* intro.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C5E1DE77A13001CB3D2 /* intro.xml */; };
-		28B29C611DE78035001CB3D2 /* YouHelpHim.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C601DE78035001CB3D2 /* YouHelpHim.xml */; };
-		28B29C631DE89FF1001CB3D2 /* YouFight.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C621DE89FF1001CB3D2 /* YouFight.xml */; };
-		28B29C651DE9C818001CB3D2 /* YouDontFight.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C641DE9C818001CB3D2 /* YouDontFight.xml */; };
-		28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */; };
-		28B29C691DEAF03E001CB3D2 /* YouSaySomething.xml in Resources */ = {isa = PBXBuildFile; fileRef = 28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */; };
 		28BB86B31C5416E4007EDF79 /* StoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BB86B21C5416E4007EDF79 /* StoryManager.m */; };
 		28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86B81C543692007EDF79 /* AdventureView.xib */; };
 		28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86BA1C5436E2007EDF79 /* CharacterSetupView.xib */; };
 		28BB86BD1C543713007EDF79 /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86BC1C543713007EDF79 /* MainMenuView.xib */; };
-		28BB86BF1C554110007EDF79 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BB86BE1C554110007EDF79 /* Default-568h@2x.png */; };
 		28E7F6A01C67CFCC0011C587 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7F69B1C67CFCC0011C587 /* Icon-40@2x.png */; };
 		28E7F6A21C67CFCC0011C587 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7F69D1C67CFCC0011C587 /* Icon-60@2x.png */; };
 		28E7F6A31C67CFCC0011C587 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7F69E1C67CFCC0011C587 /* Icon-60@3x.png */; };
 		28E7F6A41C67CFCC0011C587 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7F69F1C67CFCC0011C587 /* Icon-Small@2x.png */; };
+		7400E2FF21AC931700575E16 /* YouHelpHim.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2F521AC931700575E16 /* YouHelpHim.xml */; };
+		7400E30021AC931700575E16 /* YouDontFight.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2F621AC931700575E16 /* YouDontFight.xml */; };
+		7400E30121AC931700575E16 /* YouFight.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2F721AC931700575E16 /* YouFight.xml */; };
+		7400E30421AC931700575E16 /* YouDontSayAnything.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2FA21AC931700575E16 /* YouDontSayAnything.xml */; };
+		7400E30521AC931700575E16 /* YouSaySomething.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2FB21AC931700575E16 /* YouSaySomething.xml */; };
+		7400E30721AC931700575E16 /* YouDontHelp.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7400E2FD21AC931700575E16 /* YouDontHelp.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,17 +63,12 @@
 		2817E48E1C445D2400BF046F /* CharacterSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSetupViewController.m; sourceTree = "<group>"; };
 		285A1E891C4B069D0079F4C7 /* SceneParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneParser.h; sourceTree = "<group>"; };
 		285A1E8A1C4B069D0079F4C7 /* SceneParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneParser.m; sourceTree = "<group>"; };
-		285A1E8C1C4B0A9D0079F4C7 /* YouDontHelp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontHelp.xml; sourceTree = "<group>"; };
 		285AB3721C45B201005609B2 /* UserStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStateManager.h; sourceTree = "<group>"; };
 		285AB3731C45B201005609B2 /* UserStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStateManager.m; sourceTree = "<group>"; };
 		285AB3751C4693C0005609B2 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
 		285AB3761C4693C0005609B2 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
 		285AB3781C46941D005609B2 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		285AB3791C46941D005609B2 /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
-		286E1EBD1C669BBA0052F410 /* youAreABiologyProfessor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreABiologyProfessor.xml; sourceTree = "<group>"; };
-		286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreAnAthlete.xml; sourceTree = "<group>"; };
-		286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreNotABiologyProfessor.xml; sourceTree = "<group>"; };
-		286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = youAreNotAnAthlete.xml; sourceTree = "<group>"; };
 		286F13B21C6289B400D148EB /* arrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowRight.png; sourceTree = "<group>"; };
 		286F13B31C6289B400D148EB /* arrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowLeft.png; sourceTree = "<group>"; };
 		2876239C1C41A0880017E74C /* YesNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,25 +93,25 @@
 		287623E01C430DFB0017E74C /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 		289710DB1C503663002219D4 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		289710DC1C503663002219D4 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuNavDelegate.h; sourceTree = "<group>"; };
+		289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuNavDelegate.h; path = Protocols/MainMenuNavDelegate.h; sourceTree = "<group>"; };
 		28B29C5E1DE77A13001CB3D2 /* intro.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intro.xml; sourceTree = "<group>"; };
-		28B29C601DE78035001CB3D2 /* YouHelpHim.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouHelpHim.xml; sourceTree = "<group>"; };
-		28B29C621DE89FF1001CB3D2 /* YouFight.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouFight.xml; sourceTree = "<group>"; };
-		28B29C641DE9C818001CB3D2 /* YouDontFight.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontFight.xml; sourceTree = "<group>"; };
-		28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontSayAnything.xml; sourceTree = "<group>"; };
-		28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouSaySomething.xml; sourceTree = "<group>"; };
 		28BB86B11C5416E4007EDF79 /* StoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryManager.h; sourceTree = "<group>"; };
 		28BB86B21C5416E4007EDF79 /* StoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryManager.m; sourceTree = "<group>"; };
 		28BB86B81C543692007EDF79 /* AdventureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdventureView.xib; sourceTree = "<group>"; };
 		28BB86BA1C5436E2007EDF79 /* CharacterSetupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterSetupView.xib; sourceTree = "<group>"; };
 		28BB86BC1C543713007EDF79 /* MainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuView.xib; sourceTree = "<group>"; };
-		28BB86BE1C554110007EDF79 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		28C3B17C1DE0B8F600EDE61F /* DecisionEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionEnum.h; sourceTree = "<group>"; };
+		28C3B17C1DE0B8F600EDE61F /* DecisionEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecisionEnum.h; path = Enums/DecisionEnum.h; sourceTree = "<group>"; };
 		28E7F69B1C67CFCC0011C587 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		28E7F69D1C67CFCC0011C587 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		28E7F69E1C67CFCC0011C587 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		28E7F69F1C67CFCC0011C587 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		28E7F6A61C6909310011C587 /* StoryManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryManagerDelegate.h; sourceTree = "<group>"; };
+		28E7F6A61C6909310011C587 /* StoryManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StoryManagerDelegate.h; path = Protocols/StoryManagerDelegate.h; sourceTree = "<group>"; };
+		7400E2F521AC931700575E16 /* YouHelpHim.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouHelpHim.xml; sourceTree = "<group>"; };
+		7400E2F621AC931700575E16 /* YouDontFight.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontFight.xml; sourceTree = "<group>"; };
+		7400E2F721AC931700575E16 /* YouFight.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouFight.xml; sourceTree = "<group>"; };
+		7400E2FA21AC931700575E16 /* YouDontSayAnything.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontSayAnything.xml; sourceTree = "<group>"; };
+		7400E2FB21AC931700575E16 /* YouSaySomething.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouSaySomething.xml; sourceTree = "<group>"; };
+		7400E2FD21AC931700575E16 /* YouDontHelp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YouDontHelp.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +142,10 @@
 		286F13B61C628A0500D148EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7400E2F421AC92F100575E16 /* xml */,
 				286F13B71C628A1300D148EB /* Images */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		286F13B71C628A1300D148EB /* Images */ = {
@@ -162,13 +153,12 @@
 			children = (
 				286F13B21C6289B400D148EB /* arrowRight.png */,
 				286F13B31C6289B400D148EB /* arrowLeft.png */,
-				28BB86BE1C554110007EDF79 /* Default-568h@2x.png */,
 				28E7F69B1C67CFCC0011C587 /* Icon-40@2x.png */,
 				28E7F69D1C67CFCC0011C587 /* Icon-60@2x.png */,
 				28E7F69E1C67CFCC0011C587 /* Icon-60@3x.png */,
 				28E7F69F1C67CFCC0011C587 /* Icon-Small@2x.png */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		287623931C41A0870017E74C = {
@@ -213,7 +203,6 @@
 		2876239F1C41A0880017E74C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				28B48DE91DE0C2D000F44C7E /* StoryXML */,
 				287623A01C41A0880017E74C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -237,32 +226,6 @@
 			path = YesNoUITests;
 			sourceTree = "<group>";
 		};
-		28B29C5D1DE779C8001CB3D2 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				286E1EBD1C669BBA0052F410 /* youAreABiologyProfessor.xml */,
-				286E1EBE1C669BBA0052F410 /* youAreAnAthlete.xml */,
-				28B29C681DEAF03D001CB3D2 /* YouSaySomething.xml */,
-				286E1EBF1C669BBA0052F410 /* youAreNotABiologyProfessor.xml */,
-				28B29C661DEA3319001CB3D2 /* YouDontSayAnything.xml */,
-				286E1EC01C669BBA0052F410 /* youAreNotAnAthlete.xml */,
-			);
-			name = Old;
-			sourceTree = "<group>";
-		};
-		28B48DE91DE0C2D000F44C7E /* StoryXML */ = {
-			isa = PBXGroup;
-			children = (
-				28B29C5D1DE779C8001CB3D2 /* Old */,
-				285A1E8C1C4B0A9D0079F4C7 /* YouDontHelp.xml */,
-				28B29C5E1DE77A13001CB3D2 /* intro.xml */,
-				28B29C601DE78035001CB3D2 /* YouHelpHim.xml */,
-				28B29C621DE89FF1001CB3D2 /* YouFight.xml */,
-				28B29C641DE9C818001CB3D2 /* YouDontFight.xml */,
-			);
-			name = StoryXML;
-			sourceTree = "<group>";
-		};
 		28BB86B41C541BF9007EDF79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +240,7 @@
 				287623D91C42DEFB0017E74C /* Character.h */,
 				287623DA1C42DEFB0017E74C /* Character.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		28BB86B51C541C30007EDF79 /* Controllers */ = {
@@ -290,7 +253,7 @@
 				2817E48D1C445D2400BF046F /* CharacterSetupViewController.h */,
 				2817E48E1C445D2400BF046F /* CharacterSetupViewController.m */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		28BB86B61C541C69007EDF79 /* Managers */ = {
@@ -303,7 +266,7 @@
 				285A1E891C4B069D0079F4C7 /* SceneParser.h */,
 				285A1E8A1C4B069D0079F4C7 /* SceneParser.m */,
 			);
-			name = Managers;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		28BB86B71C54365A007EDF79 /* Views */ = {
@@ -313,7 +276,7 @@
 				28BB86BA1C5436E2007EDF79 /* CharacterSetupView.xib */,
 				28BB86BC1C543713007EDF79 /* MainMenuView.xib */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		28C3B17B1DE0B8DC00EDE61F /* Enums */ = {
@@ -331,6 +294,20 @@
 				289FD8D71C812975008EDC3D /* MainMenuNavDelegate.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		7400E2F421AC92F100575E16 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				7400E2F621AC931700575E16 /* YouDontFight.xml */,
+				7400E2FD21AC931700575E16 /* YouDontHelp.xml */,
+				7400E2FA21AC931700575E16 /* YouDontSayAnything.xml */,
+				7400E2F721AC931700575E16 /* YouFight.xml */,
+				7400E2F521AC931700575E16 /* YouHelpHim.xml */,
+				7400E2FB21AC931700575E16 /* YouSaySomething.xml */,
+				28B29C5E1DE77A13001CB3D2 /* intro.xml */,
+			);
+			path = xml;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,26 +419,21 @@
 			files = (
 				287623AC1C41A0880017E74C /* Assets.xcassets in Resources */,
 				28E7F6A41C67CFCC0011C587 /* Icon-Small@2x.png in Resources */,
-				28B29C611DE78035001CB3D2 /* YouHelpHim.xml in Resources */,
+				7400E30521AC931700575E16 /* YouSaySomething.xml in Resources */,
 				28BB86BB1C5436E2007EDF79 /* CharacterSetupView.xib in Resources */,
-				285A1E8D1C4B0A9D0079F4C7 /* YouDontHelp.xml in Resources */,
-				286E1EC21C669BBA0052F410 /* youAreAnAthlete.xml in Resources */,
 				28E7F6A31C67CFCC0011C587 /* Icon-60@3x.png in Resources */,
-				28B29C651DE9C818001CB3D2 /* YouDontFight.xml in Resources */,
-				28B29C691DEAF03E001CB3D2 /* YouSaySomething.xml in Resources */,
-				28B29C671DEA331A001CB3D2 /* YouDontSayAnything.xml in Resources */,
 				28BB86BD1C543713007EDF79 /* MainMenuView.xib in Resources */,
 				286F13B51C6289B400D148EB /* arrowLeft.png in Resources */,
 				286F13B41C6289B400D148EB /* arrowRight.png in Resources */,
 				28E7F6A21C67CFCC0011C587 /* Icon-60@2x.png in Resources */,
 				28E7F6A01C67CFCC0011C587 /* Icon-40@2x.png in Resources */,
-				286E1EC41C669BBA0052F410 /* youAreNotAnAthlete.xml in Resources */,
-				286E1EC31C669BBA0052F410 /* youAreNotABiologyProfessor.xml in Resources */,
+				7400E30721AC931700575E16 /* YouDontHelp.xml in Resources */,
+				7400E30421AC931700575E16 /* YouDontSayAnything.xml in Resources */,
+				7400E30021AC931700575E16 /* YouDontFight.xml in Resources */,
+				7400E30121AC931700575E16 /* YouFight.xml in Resources */,
 				28B29C5F1DE77A13001CB3D2 /* intro.xml in Resources */,
-				28BB86BF1C554110007EDF79 /* Default-568h@2x.png in Resources */,
-				28B29C631DE89FF1001CB3D2 /* YouFight.xml in Resources */,
 				28BB86B91C543692007EDF79 /* AdventureView.xib in Resources */,
-				286E1EC11C669BBA0052F410 /* youAreABiologyProfessor.xml in Resources */,
+				7400E2FF21AC931700575E16 /* YouHelpHim.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
