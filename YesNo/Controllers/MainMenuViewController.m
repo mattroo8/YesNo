@@ -41,7 +41,7 @@
 
 - (IBAction)maineMenuNewStoryButtonPressed:(id)sender {
     
-    Character *mainCharacter = [Character new];
+    StoryCharacter *mainCharacter = [StoryCharacter new];
     mainCharacter.firstName = @"firstName";
     mainCharacter.lastName = @"lastName";
     mainCharacter.age = @"age";
@@ -53,6 +53,7 @@
     
     [[UserStateManager sharedUserStateManager] saveCharacter:mainCharacter];
     AdventureViewController *advc = [AdventureViewController new];
+    advc.mainCharacter = mainCharacter;
     advc.isInAboutMode = NO;
     [self.navigationController pushViewController:advc animated:YES];
 }
@@ -61,6 +62,7 @@
     
     AdventureViewController *advc = [AdventureViewController new];
     advc.isInAboutMode = NO;
+    advc.mainCharacter = [[UserStateManager sharedUserStateManager]loadCharacter];
     [self.navigationController pushViewController:advc animated:YES];
 }
 - (IBAction)aboutButtonPressed:(id)sender {

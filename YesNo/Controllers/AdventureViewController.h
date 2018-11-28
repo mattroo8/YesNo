@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StoryManager.h"
 #import "UserStateManager.h"
-#import "Character.h"
+#import "StoryCharacter.h"
 #import "MainMenuViewController.h"
 
 @interface AdventureViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate, StoryManagerDelegate>
@@ -21,7 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
 
 @property (strong, nonatomic) StoryManager *storyManager;
-@property (strong, nonatomic) Character *mainCharacter;
+@property (strong, nonatomic) StoryCharacter *mainCharacter;
 @property (strong, nonatomic) UserStateManager *userStateManager;
 @property BOOL isInAboutMode;
 

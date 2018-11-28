@@ -13,17 +13,17 @@
 #import "UserStateManager.h"
 #import "StoryManagerDelegate.h"
 
-@interface StoryManager : UIViewController
+@interface StoryManager: NSObject
 
 @property (strong, nonatomic) SceneParser *parser;
 @property (strong, nonatomic) Event *currentEvent;
 @property (strong, nonatomic) Tree *storyTree;
-@property (strong, nonatomic) Character *mainCharacter;
+@property (strong, nonatomic) StoryCharacter *mainCharacter;
 
 @property (nonatomic, weak) id<StoryManagerDelegate> delegate;
 
 -(id)init;
--(void)setupStory;
+-(void)setupStory:(StoryCharacter*)mainCharacter;
 -(void)getNextTextForChoice:(DecisionEnum)choice;
 -(NSString *)getPastEventTextForDirection:(BOOL)isForwardDirection;
 -(void)saveState;

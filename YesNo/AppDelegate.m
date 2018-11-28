@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainMenuViewController.h"
+#import "YesNo-Swift.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    if(![SessionHandler.shared isSuported]){
+        NSLog(@"WCSession not supported (f.e. on iPad).");
+    }
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     UINavigationController *navVC = [UINavigationController new];

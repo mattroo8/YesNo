@@ -1,5 +1,5 @@
 //
-//  Character.h
+//  StoryCharacter.h
 //  YesNo
 //
 //  Created by Matt Rooney on 10/01/2016.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Event.h"
 
-@interface Character : NSObject <NSCoding>
+@interface StoryCharacter : NSObject <NSCoding>
 
 @property (strong,nonatomic) NSString *firstName;
 @property (strong,nonatomic) NSString *lastName;

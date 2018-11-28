@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Character.h"
+#import "StoryCharacter.h"
 #import "Scene.h"
 
 @interface UserStateManager : NSObject
 
--(void)saveCharacter:(Character *)character;
--(Character *)loadCharacter;
+-(void)saveCharacter:(StoryCharacter *)character;
+-(StoryCharacter *)loadCharacter;
 -(void)saveProgress:(Scene *)scene;
 +(UserStateManager*)sharedUserStateManager;
 -(void)deleteProgress;

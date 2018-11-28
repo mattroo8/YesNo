@@ -19,7 +19,7 @@
     if(!_isInAboutMode){
         _storyManager = [[StoryManager alloc] init];
         _storyManager.delegate = self;
-        [_storyManager setupStory];
+        [_storyManager setupStory:self.mainCharacter];
     } else {
         [self showYesButtonForStoryView:NO andNoButton:NO andBackButton:NO andForwardButton:NO];
         _textView.text = @"The objective of this game is to try to stay alive. There is only one sequence of decisions which will keep you alive. Good luck.";

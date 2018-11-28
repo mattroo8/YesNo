@@ -1,14 +1,14 @@
 //
-//  Character.m
+//  StoryCharacter.m
 //  YesNo
 //
 //  Created by Matt Rooney on 10/01/2016.
 //  Copyright © 2016 Matt Rooney. All rights reserved.
 //
 
-#import "Character.h"
+#import "StoryCharacter.h"
 
-@implementation Character
+@implementation StoryCharacter
 
 -(void)encodeWithCoder:(NSCoder *)encoder{
     [encoder encodeObject:self.firstName forKey:@"firstName"];

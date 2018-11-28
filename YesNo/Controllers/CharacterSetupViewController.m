@@ -67,7 +67,7 @@
         [self presentViewController:alert animated:YES completion:nil];
         return;
     }
-    Character *mainCharacter = [Character new];
+    StoryCharacter *mainCharacter = [StoryCharacter new];
     mainCharacter.firstName = _firstNameTextField.text;
     mainCharacter.lastName = _lastNameTextField.text;
     mainCharacter.age = _ageTextField.text;

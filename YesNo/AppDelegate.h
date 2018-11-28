@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

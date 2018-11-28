@@ -22,8 +22,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(eventsReceived:)
                                                      name:@"EventsReceivedNotification"
-                                                   object:nil];        
-        _mainCharacter = [[UserStateManager sharedUserStateManager]loadCharacter];
+                                                   object:nil];
     }
     return self;
 }
@@ -152,9 +151,10 @@
                         andForwardButton:showForwardButton];
 }
 
--(void)setupStory
+-(void)setupStory:(StoryCharacter *)mainCharacter
 {
-    [self parseNewScene:_mainCharacter.currentStory];
+    _mainCharacter = mainCharacter;
+    [self parseNewScene:mainCharacter.currentStory];
 }
 
 -(void)saveState

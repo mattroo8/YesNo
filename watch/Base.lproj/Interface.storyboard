@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" textAlignment="left" numberOfLines="0" id="HUL-f7-Te5"/>
+                        <group width="1" alignment="left" id="hit-Iz-2Vl">
+                            <items>
+                                <button width="76" height="44" alignment="left" title="Yes" id="iFP-au-JwE">
+                                    <connections>
+                                        <action selector="yesPressed" destination="AgC-eL-Hgc" id="H30-4S-Hay"/>
+                                    </connections>
+                                </button>
+                                <button width="76" height="44" alignment="left" title="No" id="edy-uR-gIc">
+                                    <connections>
+                                        <action selector="noPressed" destination="AgC-eL-Hgc" id="sWp-1R-CcC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="NoButton" destination="edy-uR-gIc" id="jpj-cI-B8A"/>
+                        <outlet property="YesButton" destination="iFP-au-JwE" id="Ze3-Jl-oue"/>
+                        <outlet property="textLabel" destination="HUL-f7-Te5" id="V4B-XY-h9c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="27.461538461538463"/>
+        </scene>
+    </scenes>
+</document>

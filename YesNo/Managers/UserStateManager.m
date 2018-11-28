@@ -48,7 +48,7 @@ static UserStateManager* _sharedUserState = nil;
     return nil;
 }
 
--(void)saveCharacter:(Character *)character
+-(void)saveCharacter:(StoryCharacter *)character
 {
     if(!character){
         return;
@@ -59,7 +59,7 @@ static UserStateManager* _sharedUserState = nil;
     [NSKeyedArchiver archiveRootObject:myObject toFile:_characterFile];
 }
 
--(Character *)loadCharacter
+-(StoryCharacter *)loadCharacter
 {
     NSMutableArray* myArray = [NSKeyedUnarchiver unarchiveObjectWithFile:_characterFile];
     return [myArray objectAtIndex:0];
