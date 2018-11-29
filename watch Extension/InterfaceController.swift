@@ -29,15 +29,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         restartButton.setHidden(true)
-        YesButton.setHidden(true)
-        NoButton.setHidden(true)
-        if isSuported() {
-            session.delegate = self
-            session.activate()
-        }
+        let character = self.createMainCharacter()
+        self.setUpStory(for: character)
     }
     
     override func didDeactivate() {
@@ -95,9 +90,6 @@ extension InterfaceController: WCSessionDelegate {
         if isReachable() {
             session.sendMessage(["request" : "version"], replyHandler: { (response) in
                 print(response)
-                let character = self.createMainCharacter()
-                self.setUpStory(for: character)
-                
             }, errorHandler: { (error) in
                 print("Error sending message: %@", error)
             })
