@@ -14,17 +14,26 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" textAlignment="left" numberOfLines="0" id="HUL-f7-Te5"/>
-                        <group width="1" alignment="left" id="hit-Iz-2Vl">
+                        <label width="1" alignment="left" text="Loading..." textAlignment="left" numberOfLines="0" id="HUL-f7-Te5"/>
+                        <group width="1" height="130" alignment="left" layout="vertical" id="A0D-af-kav">
                             <items>
-                                <button width="76" height="44" alignment="left" title="Yes" id="iFP-au-JwE">
+                                <group width="1" alignment="left" id="hit-Iz-2Vl">
+                                    <items>
+                                        <button width="76" height="44" alignment="left" title="Yes" id="iFP-au-JwE">
+                                            <connections>
+                                                <action selector="yesPressed" destination="AgC-eL-Hgc" id="H30-4S-Hay"/>
+                                            </connections>
+                                        </button>
+                                        <button width="76" height="44" alignment="left" title="No" id="edy-uR-gIc">
+                                            <connections>
+                                                <action selector="noPressed" destination="AgC-eL-Hgc" id="sWp-1R-CcC"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Restart" id="bMe-aw-cOC">
                                     <connections>
-                                        <action selector="yesPressed" destination="AgC-eL-Hgc" id="H30-4S-Hay"/>
-                                    </connections>
-                                </button>
-                                <button width="76" height="44" alignment="left" title="No" id="edy-uR-gIc">
-                                    <connections>
-                                        <action selector="noPressed" destination="AgC-eL-Hgc" id="sWp-1R-CcC"/>
+                                        <action selector="restartPressed" destination="AgC-eL-Hgc" id="gMU-9g-whD"/>
                                     </connections>
                                 </button>
                             </items>
@@ -33,6 +42,7 @@
                     <connections>
                         <outlet property="NoButton" destination="edy-uR-gIc" id="jpj-cI-B8A"/>
                         <outlet property="YesButton" destination="iFP-au-JwE" id="Ze3-Jl-oue"/>
+                        <outlet property="restartButton" destination="bMe-aw-cOC" id="k5i-Km-qyB"/>
                         <outlet property="textLabel" destination="HUL-f7-Te5" id="V4B-XY-h9c"/>
                     </connections>
                 </controller>

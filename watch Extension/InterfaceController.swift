@@ -15,6 +15,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var textLabel: WKInterfaceLabel!
     @IBOutlet var YesButton: WKInterfaceButton!
     @IBOutlet var NoButton: WKInterfaceButton!
+    @IBOutlet var restartButton: WKInterfaceButton!
     
     private var session = WCSession.default
     
@@ -30,7 +31,9 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        textLabel.setText(nil)
+        restartButton.setHidden(true)
+        YesButton.setHidden(true)
+        NoButton.setHidden(true)
         if isSuported() {
             session.delegate = self
             session.activate()
@@ -56,6 +59,13 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func noPressed() {
         storyManager.getNextText(forChoice: DecisionEnum(rawValue: 2))
+    }
+    
+    @IBAction func restartPressed() {
+        textLabel.setText(nil)
+        restartButton.setHidden(true)
+        let character = createMainCharacter()
+        setUpStory(for: character)
     }
     
     func createMainCharacter() -> StoryCharacter {
@@ -102,6 +112,9 @@ extension InterfaceController: StoryManagerDelegate {
     func showYesButton(forStoryView yesButton: Bool, andNoButton noButton: Bool, andBackButton backButton: Bool, andForwardButton forwardButton: Bool) {
         YesButton.setHidden(!yesButton)
         NoButton.setHidden(!noButton)
+        if !yesButton && !noButton {
+            restartButton.setHidden(false)
+        }
     }
     
     func setTextForStoryView(_ text: String!) {
